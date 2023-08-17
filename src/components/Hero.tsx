@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
     <div className="sticky bg-scroll">
 
       <div className="border-2 w-[100vw]  h-[813px] bg-cover bg-center bg-no-repeat hero-pattern">
-        <div className="w-[1280px]  h-[77px] border-2  mt-10 border-pink-500 m-auto">
+        <div className="w-[90vw]  h-[13vh] border-2  mt-10 border-pink-500 m-auto">
           <Navbar />
         </div>
 

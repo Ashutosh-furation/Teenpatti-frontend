@@ -12,6 +12,12 @@ import exlusiveim from "../../../assets/Offer (1).svg";
 import safeim from "../../../assets/Vector (2).svg";
 import legalim from "../../../assets/Term (1).svg";
 
+/** Exclusive  */
+import exclusivefirst from "../../../assets/exclusivefirst.svg"
+import exclusivesecond from "../../../assets/exclusivesecond.svg";
+import exclusivethird from "../../../assets/exclusivethird.svg";
+
+
 export const Gamedetail = [
   {
     id: 1,
@@ -64,3 +70,20 @@ export const Exploredata = [
     Title: "100% Legal",
   },
 ];
+
+
+export const Exclusivedata = [
+  {
+    id: 1,
+    avatar: exclusivefirst,
+  },
+  {
+    id: 2,
+    avatar: exclusivesecond,
+  },
+  {
+    id: 3,
+    avatar: exclusivethird,
+  },
+];
+

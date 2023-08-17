@@ -109,7 +109,7 @@ text-align: left;
 }
 
 .play{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato';
 font-weight: 500;
 line-height: 22px;
 letter-spacing: 0em;
@@ -138,6 +138,8 @@ letter-spacing: 0em;
 
 }
 
+
+
 .explore-offer{
    display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -159,3 +161,29 @@ letter-spacing: 0em;
        .exclusivebackground{
          background-color: black;
        }
+
+       .exclusive-container{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+       gap: 10px;
+       }
+       .exclusive-box{
+        box-shadow: 0px 4px 20px 0px #FFC0004D;
+       }
+
+       .playexclusive{
+         font-family: 'Lato', sans-serif;
+         margin-top: 20px;
+         font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 38px;
+        letter-spacing: 0em;
+      }
+       
+       .play-button-exclusive{
+        /* border: 1px solid; */
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(111.16deg, rgba(173, 11, 64, 0.878431) 9.86%, #FF1917 63.95%);
+       }
+
