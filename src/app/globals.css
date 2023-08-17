@@ -138,4 +138,18 @@ letter-spacing: 0em;
 
 }
 
+.explore-offer{
+   display: grid;
+  grid-template-columns: repeat(4,1fr);
+   gap: 10px;
+}
 
+.offer-title{
+ font-family: 'Bricolage Grotesque';
+ color: #ffffff;
+font-size: 1.5rem;
+font-weight: 400;
+line-height: 29px;
+letter-spacing: 0em;
+
+}
