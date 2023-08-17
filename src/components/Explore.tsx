@@ -6,7 +6,7 @@ import insta from "../../assets/Insta play.svg"
 import  exlusive from "../../assets/Exlusive.svg"
 import legal from "../../assets/Legal.svg"
 import safe from "../../assets/safe.svg"
-import suffleAnimation from "../../assets/animation_llf41jf4_small.gif";
+import suffleAnimation from "../../assets/https___lottiefiles.com_animations_ace-of-spade-XlKBNiUy5Q.gif";
 import { Exploredata } from "./data/Data.js";
 // console.log("Exploredata", Exploredata);
 
