@@ -5,15 +5,17 @@ import React from 'react'
 import Game from './Game';
 import Explore from './Explore';
 import ExlcusiveOffer from './ExlcusiveOffer';
+import Champions from './Champions';
 
 const Homepage = () => {
-  
+   
   return (
     <div>
       <Hero />
        <Game/>
        <Explore/>
        <ExlcusiveOffer />
+       <Champions/>
     </div>
   );
 }
