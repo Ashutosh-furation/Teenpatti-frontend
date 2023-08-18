@@ -2,6 +2,9 @@ import Teenpatti from "../../../assets/Teenpti.svg";
 import Marriage from "../../../assets/marrige.svg";
 import community from "../../../assets/comnity.svg";
 
+/**  */
+import teenpatigame from "../../../assets/Teenpatti.png"
+
 import insta from "../../../assets/Insta play.svg";
 import exlusive from "../../../assets/Exlusive.svg";
 import legal from "../../../assets/Legal.svg";

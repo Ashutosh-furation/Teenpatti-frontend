@@ -1,7 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Lato:ital@1&display=swap'); */
-
 @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Lato:ital@1&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -39,7 +37,7 @@ body {
     #ff1917 63.95%
   );
 }
-
+/** hero section */
 .p-text {
   font-family: "Lato";
 }
@@ -64,15 +62,14 @@ body {
 }
 
 .Games-container {
-  /* border: 2px solid yellow; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
 .game-box-con {
-  border: 2px solid #ad0b40;
-  border-radius: 20px;
+  border: .1px solid #ad0b40;
+  border-radius: 10px;
   background: linear-gradient(
     180deg,
     rgba(75, 73, 74, 0.7) 57.81%,
@@ -88,23 +85,33 @@ body {
 }
 
 .avatar-box {
-  border: 10px solid #ad0b40;
+  /* border: 10px solid; */
+  border: 10px solid #AD0B40;
+  /*#FF1917 AD0B40*/
   /* border-radius: 20px, 20px, 0px, 0px ; */
+  /* border:linear-gradient(111.16deg, rgba(173, 11, 64, 0.878431) 9.86%, #FF1917 63.95%); */
+;
+}
+
+.image-color{
+  /* background: ; */
+  /* background: linear-gradient(111.16deg, rgba(173, 11, 64, 0.878431) 9.86%, rgba(173, 11, 64, 0.878431 )); */
+  background-color: #AD0B40;
 }
 
 .marriage-des {
   color: rgba(255, 255, 255, 0.6);
   font-family: "Lato";
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 1.2rem;
   letter-spacing: 0em;
   text-align: left;
 }
 
 .font-title {
   font-family: "Bricolage Grotesque";
-  font-size: 42px;
+  font-size: 2.1rem;
   font-weight: 400;
   line-height: 50px;
   letter-spacing: 0em;

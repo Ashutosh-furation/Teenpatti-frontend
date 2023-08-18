@@ -7,7 +7,7 @@ import sufflecoin from "../../assets/Sufflechamp.svg"
 
 const Champions: React.FC = () => {
   return (
-    <div className="border-2  h-[105vh] border-yellow-400 champ-con">
+    <div className="border-2 w-[100vw] h-[105vh] m-auto border-pink-400 champ-con">
       
       <div className="border-2 w-[90vw] h-[15vh] m-auto mt-2 flex justify-between border-green-600">
         <div className=" w-[10vw] h-[10vh] border-red-700">
