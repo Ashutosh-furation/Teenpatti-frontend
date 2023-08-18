@@ -17,6 +17,13 @@ import exclusivefirst from "../../../assets/exclusivefirst.svg"
 import exclusivesecond from "../../../assets/exclusivesecond.svg";
 import exclusivethird from "../../../assets/exclusivethird.svg";
 
+  /**
+   * champions data 
+   */
+  
+  import nathanimg from "../../../assets/champfirst.svg";
+ import nathansec from "../../../assets/flying confetti.svg";
+ import nathanthird from "../../../assets/champthird.svg";
 
 export const Gamedetail = [
   {
@@ -84,6 +91,34 @@ export const Exclusivedata = [
   {
     id: 3,
     avatar: exclusivethird,
+  },
+];
+
+  /**
+   * champions data
+   */
+
+export const Championsdata = [
+  {
+    id: 1,
+    avatar: nathanimg,
+    username: "Nathan Bishop",
+    userdes:
+      "I love playing at Sikka Play because of massive bonuses- theres always rewards waiting for us.",
+  },
+  {
+    id: 2,
+    avatar: nathanthird,
+    username: "Maria Ray",
+    userdes:
+      "I love playing at Sikka Play because of massive bonuses- theres always rewards waiting for us.",
+  },
+  {
+    id: 3,
+    avatar: nathanthird,
+    username: "Bibek Burke",
+    userdes:
+      "I love playing at Sikka Play because of massive bonuses- theres always rewards waiting for us.",
   },
 ];
 
