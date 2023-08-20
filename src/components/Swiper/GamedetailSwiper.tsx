@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const GamedetailSwiper: React.FC = () => {
   return (
-    <div className="border-2 w-[90vw]  m-auto border-yellow-500">
+    <div className=" w-[90vw]  m-auto mt-5 border-yellow-500">
       <div className="w-[90vw] border-pink-500 h-[100vh] m-auto  Games-container">
         {Gamedetail.length > 0 &&
           Gamedetail.map((game) => {

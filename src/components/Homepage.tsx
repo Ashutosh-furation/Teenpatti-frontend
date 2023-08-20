@@ -6,16 +6,20 @@ import Game from './Game';
 import Explore from './Explore';
 import ExlcusiveOffer from './ExlcusiveOffer';
 import Champions from './Champions';
+import Hexa from './Hexa';
+import HeroRect from './HeroRect';
 
 const Homepage = () => {
    
   return (
     <div>
-       <Hero />
-       <Game/>
-       <Explore/>
-       <ExlcusiveOffer />
-       <Champions/>
+      <Hero />
+      <HeroRect />
+      <Game/>
+      <Explore/>
+      <ExlcusiveOffer />
+      <Champions/>
+
     </div>
   );
 }
