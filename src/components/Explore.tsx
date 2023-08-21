@@ -19,37 +19,52 @@ const Explore: React.FC = () => {
         <h1 className="text-center explore-font"> Explore Sikka Play </h1>
       </div>
 
-      <div className="w-[90%] m-auto border-2 border-yellow-600 flex justify-around">
+      <div className="w-[100%] m-auto  border-yellow-600 flex justify-around">
         <div className=" text-center h-[40vh] mt-5 border-white-500 p-5 flex justify-around explore-offer">
           {Exploredata.length > 0 &&
             Exploredata.map((data) => {
               return (
                 <div
-                  className="text-center w-[176px] h-[153px] mt-5 border-white-500"
+                  className="text-center w-[100%] h-[30vh] mt-5 border-white-500"
                   key={data.id}
                 >
-                  <div className=" text-center  h-[153px] m-auto justify-center border-white-500">
-                    <div className="w-[100%] h-[125px] m-auto mt-1 text-center">
-                      <Image
-                        src={data.img}
-                        alt="insta"
-                        className="m-auto"
-                      />
+                  <div className="  text-center  m-auto justify-center border-yellow-500">
+                    {/* <div className="w-[100%] border-2 border-green-600  h-[125px] m-auto mt-1 text-center">
+                      <Image src={data.img} alt="insta" className="m-auto" />
+                    </div> */}
+
+                    <div className="flex  justify-center items-center ">
+                      <div className="h-[15vh] m-auto justify-center items-center  border-green-600   ">
+                        <div>
+                          <Image
+                            src={data.img}
+                            alt="Image"
+                            className="w-full  m-auto"
+                          />
+                        </div>
+                      </div>
                     </div>
-                    <p className="offer-title">{data.Title} </p>
+
+                    <div className="mt-5">
+                      <p className="offer-title">{data.Title} </p>
+                    </div>
                   </div>
                 </div>
               );
             })}
         </div>
 
-        <div className="text-center w-[20vw] h-[30vh] border-white-500 mt-5 border-white-500">
-         
-          <Image src={suffleAnimation} alt="explore" width={500} height={500} />
+        <div className="text-center  w-[25vw] h-[25vh] border-white-500 mt-10 border-white-500">
+          <div className=' border-yellow-500'>
+            <Image
+              src={suffleAnimation}
+              alt="explore"
+              width={700}
+              height={700}
+            />
+          </div>
         </div>
       </div>
-
-     
     </div>
   );
 };

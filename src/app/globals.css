@@ -210,9 +210,9 @@ letter-spacing: 0em;
 .explore-font {
   font-family: "Bricolage Grotesque";
   color: #ffffff;
-  font-size: 42px;
+  font-size: 3rem;
   font-weight: 400;
-  line-height: 50px;
+  line-height:3rem;
   letter-spacing: 0em;
 }
 
@@ -227,7 +227,7 @@ letter-spacing: 0em;
   color: #ffffff;
   font-size: 1.5rem;
   font-weight: 400;
-  line-height: 29px;
+  line-height: 1.5rem;
   letter-spacing: 0em;
 }
 
