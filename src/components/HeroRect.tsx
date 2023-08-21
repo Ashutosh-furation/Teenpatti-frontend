@@ -4,11 +4,10 @@ import Image from "next/image";
 
 const HeroRect: React.FC = () => {
   return (
-    <div className="w-[100%] border-2 border-yellow-900   relative top-[140px] extra-Rec">
-      
-     
+    <div className=" absolute bottom-3  border-yellow-900 w-full  ">
+      <Image src={hero} alt="hero" className="w-full" />
     </div>
   );
 };
 
-export default HeroRect;
+export default HeroRect;   

@@ -10,20 +10,24 @@ import GamedetailSwiper from './Swiper/GamedetailSwiper';
 const Game: React.FC =() => {
   return (
     <div>
-      <div className=" w-[100vw] h-[150vh] p-5 border-black  game-background">
-        <div className="w-[100vw] m-auto  flex justify-between">
-          <div className=" w-[7vw] h-[12vh]  border-pink-500">
+      <div className="w-[100%] h-[850px]  border-yellow-500  game-background">
+        <div className="w-[100%] border- p-3 m-auto text-center  flex justify-between">
+          <div className=" w-[5rem] relative top-20 border-pink-500">
             <Image src={card} alt="card" />
           </div>
-          <div className="border-2 w-[30vw] h-[13vh] text-white font-bold text-center text-lg border-pink-500 game-logo">
-            <Image className="m-auto mt-5" src={game} alt="game" />
+
+          <div className="border-2 w-[40%] h-[76px] m-auto text-white font-bold text-center text-lg border-pink-500 game-logo">
+            <p className="text-center m-auto mt-3 text-white game-text">
+              {" "}
+              Games
+            </p>
           </div>
-          <div className=" w-[12vw] h-[19vh] border-pink-500 ">
+          <div className=" w-[8vw] h-[14vh] relative top-10 border-pink-500 ">
             <Image src={coin} alt="Coin" />
           </div>
         </div>
-    
-        <div className="h-[90vh]">
+
+        <div className="h-[90vh]  border-yellow-400">
           <GamedetailSwiper />
         </div>
       </div>

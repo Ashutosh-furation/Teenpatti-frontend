@@ -12,9 +12,10 @@ import HeroRect from './HeroRect';
 const Homepage = () => {
    
   return (
-    <div>
+    <div className='w-[100%]'>
       <Hero />
-      <HeroRect />
+
+      {/* <HeroRect /> */}
       <Game/>
       <Explore/>
       <ExlcusiveOffer />

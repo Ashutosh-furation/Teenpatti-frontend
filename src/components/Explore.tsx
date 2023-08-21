@@ -14,12 +14,12 @@ import { Exploredata } from "./data/Data.js";
 const Explore: React.FC = () => {
 
   return (
-    <div className="w-[100vw] h-[60vh] explore-container">
+    <div className="w-[100%] border-2 border-green-800 h-[60vh] explore-container">
       <div className="h-[50px] mt-4 text-center  border-green-500">
         <h1 className="text-center explore-font"> Explore Sikka Play </h1>
       </div>
 
-      <div className="w-[95vw] flex justify-around">
+      <div className="w-[90%] m-auto border-2 border-yellow-600 flex justify-around">
         <div className=" text-center h-[40vh] mt-5 border-white-500 p-5 flex justify-around explore-offer">
           {Exploredata.length > 0 &&
             Exploredata.map((data) => {

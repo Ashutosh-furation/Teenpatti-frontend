@@ -8,9 +8,9 @@ import ExlcusiveofferCard from './Swiper/ExclusiveofferCard';
 const ExlcusiveOffer: React.FC = () => {
 
   return (
-    <div className="h-[120vh] w-[100vw]  text-center  border-green-500 exclusivebackground">
-      <div className=" w-[90vw] m-auto  text-center  border-yellow-500 flex justify-between  ">
-        <div className="h-[110px]   border-pink-500">
+    <div className="h-[120vh] w-[100%] border-2 text-center  border-green-500 exclusivebackground">
+      <div className="w-[90vw] border-2 m-auto  text-center  border-yellow-500 flex justify-between  ">
+        <div className="h-[110px] border-2   border-pink-500">
           <Image
             src={suffleCoin}
             alt="card"
