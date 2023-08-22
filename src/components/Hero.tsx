@@ -5,27 +5,40 @@ import Image from "next/image";
 import sikka from "../../assets/sikkafontfilled 4.svg";
 import Rectangle from "../assets/Rectangle.png";
 import Navbar from "./Navbar";
-import group from "../../assets/Group 152.svg";
+import group 
+from "../../assets/Group 152.svg";
 import HeroRect from "./HeroRect";
+import Nav from "./Nav";
+import navlogo from "../../assets/onlyNavbar.svg"
 
 const Hero: React.FC = () => {
   return (
     <div className=" border-yellow-600">
       <div className="w-[100%] m-auto  h-[813px] border-black-900 object-fit bg-no-repeat hero-pattern">
-        <div className="h-[20%] w-[100%] m-auto   border-green-600  main-nav-con">
-          <div className=" w-[90%] h-[4.8rem] m-auto mt-5   border-pink-900 navbar-con">
-            <div className="w-[90%] nav-main-box   border-2   border-pink-500 m-auto">
+        {/* <div className="h-[20%] w-[100%] m-auto   border-green-600  main-nav-con">
+          <div className=" w-[95%] h-[4.8rem] m-auto mt-5   border-pink-900 navbar-con">
+            <div className="w-[95%] nav-main-box   border-2   border-pink-500 m-auto">
               <Navbar />
             </div>
           </div>
+        </div> */}
+        <div className="h-[20%]   w-[100%] m-auto   border-green-600  main-nav-con">
+          <div className="w-[95%] h-[11vh]  m-auto relative top-5">
+            <Image src={navlogo} alt="gamelogo" className="m-auto" />
+          </div>
+          <div className=" w-[85%] relative top-[-8vh] m-auto ">
+            <Navbar />
+          </div>
         </div>
+
+        {/* <Nav/> */}
 
         <div className=" w-[90%]  h-[80vh] m-auto mt-40 border-green-500 flex justify-between">
           <div className="w-[70%]  h-[20rem] m-auto border-yellow-500">
             <div className=" w-[100%]  h-[20vh] border-pink-500">
               <Image src={sikka} alt="Sikka logo" />
             </div>
-            
+
             <div className="w-[80%]  h-[13vh] mt-5 border-pink-500">
               <p className="text-white font-[500] leading-[2rem] p-text">
                 Experience boundless amusement on ultimate betting platform!
@@ -54,20 +67,9 @@ const Hero: React.FC = () => {
             </div>
           </div>
         </div>
-        {/* <HeroRect /> */}
       </div>
     </div>
   );
 };
 
 export default Hero;
-
-/**
- *  <div className="h-[10%] w-[95%]m-auto border-2  border-green-600  main-nav-con">
-          <div className="h-[15%] w-[60rem] m-auto  border-2 border-pink-900 navbar-con">
-            <div className="w-[90%] nav-main-box  h-[13vh] border-2   border-pink-500 m-auto">
-               <Navbar /> 
-            </div>
-          </div>
-        </div>
- */

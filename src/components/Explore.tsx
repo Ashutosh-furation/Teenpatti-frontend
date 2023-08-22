@@ -15,12 +15,12 @@ const Explore: React.FC = () => {
 
   return (
     <div className="w-[100%] border-2 border-green-800 h-[60vh] explore-container">
-      <div className="h-[50px] mt-4 text-center  border-green-500">
+      <div className="h-[50px] mt-4 text-center relative top-5  border-green-500">
         <h1 className="text-center explore-font"> Explore Sikka Play </h1>
       </div>
 
-      <div className="w-[100%] m-auto  border-yellow-600 flex justify-around">
-        <div className=" text-center h-[40vh] mt-5 border-white-500 p-5 flex justify-around explore-offer">
+      <div className="w-[100%] h-[35vh] border-2 m-auto relative top-10  border-yellow-600 flex justify-around">
+        <div className=" text-center h-[35vh] mt-5 border-white-500 p-5 flex justify-around explore-offer">
           {Exploredata.length > 0 &&
             Exploredata.map((data) => {
               return (
@@ -35,11 +35,11 @@ const Explore: React.FC = () => {
 
                     <div className="flex  justify-center items-center ">
                       <div className="h-[15vh] m-auto justify-center items-center  border-green-600   ">
-                        <div>
+                        <div className="h-[30%] object-fill">
                           <Image
                             src={data.img}
                             alt="Image"
-                            className="w-full  m-auto"
+                            className="w-[70px] h-[70px]   m-auto"
                           />
                         </div>
                       </div>
@@ -55,7 +55,7 @@ const Explore: React.FC = () => {
         </div>
 
         <div className="text-center  w-[25vw] h-[25vh] border-white-500 mt-10 border-white-500">
-          <div className=' border-yellow-500'>
+          <div className=" border-yellow-500">
             <Image
               src={suffleAnimation}
               alt="explore"

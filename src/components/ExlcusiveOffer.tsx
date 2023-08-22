@@ -3,14 +3,14 @@ import suffleCoin from "../../assets/exclusive-suffle.svg"
 import sufflecard from "../../assets/exclusiveCard (2).svg"
 import Image from 'next/image';
 import ExlcusiveofferCard from './Swiper/ExclusiveofferCard';
-
+import gamelogo from "../../assets/Gamelogo.svg"
 
 const ExlcusiveOffer: React.FC = () => {
 
   return (
-    <div className="h-[120vh] w-[100%] border-2 text-center  border-green-500 exclusivebackground">
-      <div className="w-[90vw] border-2 m-auto  text-center  border-yellow-500 flex justify-between  ">
-        <div className="h-[110px] border-2   border-pink-500">
+    <div className="h-[120vh] b w-[100%]  text-center  border-green-500 exclusivebackground">
+      <div className="w-[95%]  m-auto  text-center  border-yellow-500 flex justify-between  ">
+        <div className="h-[110px] w-[10%]  relative top-5  border-pink-500">
           <Image
             src={suffleCoin}
             alt="card"
@@ -18,20 +18,31 @@ const ExlcusiveOffer: React.FC = () => {
           />
         </div>
 
-        <div className="h-[110px]   border-pink-500 ">
-          <Image
-            src={sufflecard}
-            alt="Coin"
-            className="w-[300px] h-[180px] m-auto"
-          />
+        <div className="h-[110px] w-[15%] relative top-5  border-pink-500 ">
+          <Image src={sufflecard} alt="Coin" className="w-[100%]  m-auto" />
         </div>
       </div>
 
-      <div className="border-2 w-[386px] h-[76px] m-auto text-white font-bold text-center text-lg border-pink-500 game-logo">
-        <p className="text-center m-auto mt-5 text-white"> Exclusive Offers </p>
+      {/* <div className="border-2 w-[40%] h-[76px] m-auto text-white font-bold text-center text-lg border-pink-500 game-logo">
+        <p className="text-center m-auto mt-5 text-white exclusive-text">
+          {" "}
+          Exclusive Offers{" "}
+        </p>
+      </div> */}
+      <div className="w-[100%]  border-green-700 m-auto">
+        {/* <div className="w-[100%]  h-[76px]  m-auto text-white font-bold text-center  border-pink-500 ">
+          <Image src={gamelogo} alt="gamelogo" />
+        </div> */}
+        <div className="flex justify-center">
+          <Image src={gamelogo} alt="gamelogo" />
+        </div>
+        <p className="text-center m-auto mt-5 relative top-[-70px] text-white exclusive-text">
+          {" "}
+          Exclusive Offers{" "}
+        </p>
       </div>
 
-      <div className="h-[60vh]   border-yellow-500">
+      <div className="h-[60vh]  mt-5  border-yellow-500">
         <ExlcusiveofferCard />
       </div>
     </div>
