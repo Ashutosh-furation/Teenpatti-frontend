@@ -24,12 +24,13 @@ const ChampionCard: React.FC = () => {
   return (
     <div
       className="h-[90%]
-     relative top-[-20px] border-green-500 "
+     relative top-[-20px] border-green-500"
     >
       <Swiper
         slidesPerView={3}
         spaceBetween={30}
         navigation={true}
+        centeredSlides={true}
         onSlideChange={handleSlideChange}
         pagination={{
           clickable: true,
@@ -43,7 +44,7 @@ const ChampionCard: React.FC = () => {
               <SwiperSlide
                 // key={data.id}
                 key={index}
-                className={`swiper-dot congrs user-descrip Image ${
+                className={`swiper-dot congrs user-descrip userimage Image ${
                   activeIndex === index ? "selected" : ""
                 }`}
                 // className={`swiper-dot  User-Avatar avtar ${
@@ -56,14 +57,14 @@ const ChampionCard: React.FC = () => {
                   <div className="flex justify-center items-center ">
                     {/*  className="w-20 h-20 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full overflow-hidden User-Avatar" */}
                     <div
-                      className="Image"
+                      className="Image userimage"
                       style={{
-                        width: activeIndex === index ? "250px" : "150px", // Adjust the widths as needed
+                        width: activeIndex === index ? "250px" : "150px", opacity:activeIndex===index ? "1" :".5"  // Adjust the widths as needed
                       }}
                     >
                       <Image
                         src={data.avatar}
-                        alt="Profile Image"
+                        alt={`Profile Image ${index + 1}`}
                       />
                     </div>
                   </div>
@@ -75,9 +76,7 @@ const ChampionCard: React.FC = () => {
                     </p>
                   </div>
                   <div className="border-green-600 mt-5 ">
-                    <p className="text-center  user-descrip">
-                      {data.userdes}
-                    </p>
+                    <p className="text-center  user-descrip">{data.userdes}</p>
                   </div>
                 </div>
               </SwiperSlide>

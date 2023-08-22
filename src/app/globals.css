@@ -10,7 +10,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  cursor: pointer;
+ 
 }
 
 .Navbar-box{
@@ -260,6 +260,8 @@ text-align: center;
     rgba(173, 11, 64, 0.878431) 9.86%,
     #ff1917 63.95%
   );
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 /** champians talk */
@@ -273,15 +275,15 @@ background: linear-gradient(0deg, rgba(7,7,7,1) 66%, rgba(19,9,28,1) 100%);
 .champ-logo {
   background-color: rgba(180, 14, 13, 0.15);
   font-family: "Bricolage Grotesque";
+  /* font-family: 'Marbley Free'; */
   font-size: 2.2rem;
   font-weight: 400;
   line-height: 3rem;
   letter-spacing: 0em;
-
 }
 
 .champ-text{
-  font-family: "Bricolage Grotesque";
+  font-family: 'Marbley Free';
   color: #ffffff;
   font-size: 1.8rem;
   font-weight: 400;
@@ -339,9 +341,18 @@ letter-spacing: 0em;
 .Image{
  /* border: 2px solid rgb(193, 140, 25); */
  width: 100px;
+ /* opacity: .5; */
 }
 
+/* .Image.Selected{
+  opacity: 5;
+} */
 
+
+
+.userimage.selected{
+  opacity: 2;
+}
 
 .user-descrip.selected{
   color: #ffffff;
@@ -351,4 +362,40 @@ letter-spacing: 0em;
    /* background-image: url('../../assets/flyingconfetti.svg'); */
    background-image: url('../../assets/flying.svg');
    width: 400px;
+}
+
+/***** ----------------------------- ********* /
+/* ImageSwiper.module.css */
+.swiperContainer {
+  /* width: 100%; */
+  /* max-width: 800px; Adjust as needed */
+  /* margin: 0 auto;
+  position: relative; */
+}
+
+.swiperButtonPrev,
+.swiperButtonNext {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.swiperButtonPrev:hover,
+.swiperButtonNext:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }

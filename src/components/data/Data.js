@@ -24,9 +24,10 @@ import exclusivethird from "../../../assets/exclusivethird.svg";
    * champions data 
    */
   
-  import nathanimg from "../../../assets/champfirst.svg";
+  import nathanimg from "../../../assets/champSE.svg";
  import nathansec from "../../../assets/markaroy.svg";
- import nathanthird from "../../../assets/champthird.svg";
+ import nathanthird from "../../../assets/champfir.svg";
+//  import nathanfirst from "../../../assets/champSE.svg"
 
 export const Gamedetail = [
   {
