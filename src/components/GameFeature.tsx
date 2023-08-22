@@ -16,8 +16,8 @@ const GameFeatures: React.FC = () => {
               <div className="text-center w-[76px] h-[76px] object-fill">
                 <Image src={feature.featureLogo} alt="feature-Image" />
               </div>
-              <h4>{feature.featureHeading}</h4>
-              <p className="text-gray-500 w-[75%] mx-auto text-center">
+              <h4 className="text-xl">{feature.featureHeading}</h4>
+              <p className="text-gray-500 w-[75%] mx-auto text-center text-base">
                 {feature.featurePara}
               </p>
             </div>

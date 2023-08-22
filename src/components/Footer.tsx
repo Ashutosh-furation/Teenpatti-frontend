@@ -27,11 +27,11 @@ const Footer: React.FC = () => {
           </p>
         </div>
         <div className="footer-payment-info flex justify-center items-canter pt-14">
-          <hr className=" w-[25%] my-auto" />
-          <p className="w-[40%] text-center text-3xl">
+          <hr className=" w-[27%] my-auto" />
+          <p className="w-[38%] text-center text-2xl">
             Your money is safe with us
           </p>
-          <hr className=" w-[25%] my-auto" />
+          <hr className=" w-[27%] my-auto" />
         </div>
         <div className="footer-payment-container flex justify-between py-20 px-14">
           <div className="payment-security">
@@ -64,18 +64,22 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <p className="backdrop-blur-lg p-5	text-center text-base">
-          This game involves an element of financial risk and may be addictive.
-          Please play responsibly and at your own risk. T&C Apply
-        </p>
+        <div className=" p-5	text-center text-base relative ">
+          <div className="absolute top-0 left-0 right-0 bottom-0 bg-slate-100 opacity-10 z-0"></div>
+          <p className="">
+            This game involves an element of financial risk and may be
+            addictive. Please play responsibly and at your own risk. T&C Apply
+          </p>
+        </div>
 
         <div className="footer-container flex justify-between px-10 py-12 text-sm ">
           <div className="left-footer">
             <div className="address py-5">
-              <h4>Address</h4>
+              <h4>Address:</h4>
               <p>Level 1, 12 Sample St, Nepal</p>
             </div>
             <div className="Contact-us">
+              <h4>Contact:</h4>
               <a href="#" className="underline">
                 1800 123 4567{" "}
               </a>

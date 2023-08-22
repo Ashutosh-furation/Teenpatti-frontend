@@ -142,6 +142,24 @@ export const Championsdata = [
   },
 ];
 
+export const faqData = [
+  {
+    question: "How do I create an account?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aliquam adipisci iusto aperiam? Sint asperiores sequi nobis inventore ratione deleniti?",
+  },
+  {
+    question: "Is my information secure?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aliquam adipisci iusto aperiam? Sint asperiores sequi nobis inventore ratione deleniti?",
+  },
+  {
+    question: "Can I play for free?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aliquam adipisci iusto aperiam? Sint asperiores sequi nobis inventore ratione deleniti?",
+  },
+];
+
 export const GameFeature = [
   {
     id: 1,
@@ -153,16 +171,16 @@ export const GameFeature = [
   {
     id: 1,
     featureLogo: GameFeatureImage2,
-    featureHeading: "Responsible Gaming",
+    featureHeading: "Secured Payment Partners",
     featurePara:
-      "Players must be minimum 18 years of age to play real money rummy games. This game may be habit-forming or financially risky. Play responsibly.",
+      "Secured payment partners ensure safe transactions on Sikka Play, a game website, enhancing user trust and financial protection.",
   },
   {
     id: 1,
     featureLogo: GameFeatureImage3,
-    featureHeading: "Responsible Gaming",
+    featureHeading: "100% Legal",
     featurePara:
-      "Players must be minimum 18 years of age to play real money rummy games. This game may be habit-forming or financially risky. Play responsibly.",
+      "Rummy was declared to be a game of skill by the Hon’ble. Supreme Court of India in 1968 and is 100% legal to play for free or cash on most parts of India",
   },
 ];
 

@@ -5,25 +5,8 @@ import AceCard from "../../assets/AceCard.svg";
 import BlackChip from "../../assets/BlackChip.svg";
 import GreenChip from "../../assets/GreenChip.svg";
 import PinkChip from "../../assets/PinkChip.svg";
-
+import { faqData } from "./data/Data";
 const Faq: React.FC = () => {
-  const faqData = [
-    {
-      question: "How do I get started?",
-      answer:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aliquam adipisci iusto aperiam? Sint asperiores sequi nobis inventore ratione deleniti?",
-    },
-    {
-      question: "What is the difference between a free and paid account?",
-      answer:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aliquam adipisci iusto aperiam? Sint asperiores sequi nobis inventore ratione deleniti?",
-    },
-    {
-      question: "How can I cancel my subscription?",
-      answer:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aliquam adipisci iusto aperiam? Sint asperiores sequi nobis inventore ratione deleniti?",
-    },
-  ];
   const [activeIndex, setActiveIndex] = useState(null);
   const handleAccordionClick = (index: any) => {
     setActiveIndex(activeIndex === index ? null : index);
