@@ -14,12 +14,12 @@ import { Exploredata } from "./data/Data.js";
 const Explore: React.FC = () => {
 
   return (
-    <div className="w-[100%] border-2 border-green-800 h-[60vh] explore-container">
+    <div className="w-[100%]  h-[60vh] explore-container">
       <div className="h-[50px] mt-4 text-center relative top-5  border-green-500">
         <h1 className="text-center explore-font"> Explore Sikka Play </h1>
       </div>
 
-      <div className="w-[100%] h-[35vh] border-2 m-auto relative top-10  border-yellow-600 flex justify-around">
+      <div className="w-[100%] h-[35vh]  m-auto relative top-10  border-yellow-600 flex justify-around">
         <div className=" text-center h-[35vh] mt-5 border-white-500 p-5 flex justify-around explore-offer">
           {Exploredata.length > 0 &&
             Exploredata.map((data) => {
@@ -39,7 +39,18 @@ const Explore: React.FC = () => {
                           <Image
                             src={data.img}
                             alt="Image"
-                            className="w-[70px] h-[70px]   m-auto"
+                            
+                            style={{
+                              width:
+                                data.id === 1 || data.id === 2
+                                  ? "200px"
+                                  : "100px",
+                              height:
+                                data.id === 1 || data.id === 2
+                                  ? "90px"
+                                  : "65px",
+                              
+                            }}
                           />
                         </div>
                       </div>

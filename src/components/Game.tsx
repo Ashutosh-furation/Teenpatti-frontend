@@ -26,7 +26,7 @@ const Game: React.FC =() => {
             <div className="w-[100%] h-[76px] m-auto text-white font-bold text-center text-lg border-pink-500 ">
               <Image src={gamelogo} alt="gamelogo" />
             </div>
-            <div className="border-2  relative top-[-60px]">
+            <div className=" relative top-[-60px]">
               <p className="flex text-center justify-center  text-white game-text">
                 {" "}
                 Games

@@ -10,6 +10,7 @@ from "../../assets/Group 152.svg";
 import HeroRect from "./HeroRect";
 import Nav from "./Nav";
 import navlogo from "../../assets/onlyNavbar.svg"
+import heroshadow from "../../assets/heroboxshadow.png"
 
 const Hero: React.FC = () => {
   return (
@@ -22,18 +23,16 @@ const Hero: React.FC = () => {
             </div>
           </div>
         </div> */}
-        <div className="h-[20%]   w-[100%] m-auto   border-green-600  main-nav-con">
-          <div className="w-[95%] h-[11vh]  m-auto relative top-5">
+        <div className="h-[20%] relative top-0 w-[100%] m-auto   border-green-600  main-nav-con">
+          <div className="w-[95%]  h-[4rem]  m-auto relative top-5">
             <Image src={navlogo} alt="gamelogo" className="m-auto" />
           </div>
-          <div className=" w-[85%] relative top-[-8vh] m-auto ">
+          <div className=" h-[4rem] w-[85%] p-2 relative top-[-26%] m-auto ">
             <Navbar />
           </div>
         </div>
-
-        {/* <Nav/> */}
-
-        <div className=" w-[90%]  h-[80vh] m-auto mt-40 border-green-500 flex justify-between">
+      
+        <div className=" w-[90%]  h-[75vh] m-auto mt-40 border-green-500 flex justify-between">
           <div className="w-[70%]  h-[20rem] m-auto border-yellow-500">
             <div className=" w-[100%]  h-[20vh] border-pink-500">
               <Image src={sikka} alt="Sikka logo" />
@@ -46,7 +45,7 @@ const Hero: React.FC = () => {
               </p>
             </div>
             <div className=" w-[90%] mt-5 border-pink-500">
-              <button className="w-[22%] h-[8vh] text-white rounded-[5px] join-button">
+              <button className="w-[22%] h-[48px] text-white rounded-[5px] join-button">
                 Join Now!
               </button>
             </div>
@@ -60,10 +59,14 @@ const Hero: React.FC = () => {
                 className=" m-auto justify-center"
               />
             </div> */}
-            <div className="flex  justify-center items-center ">
+            <div className="heroshadow relative top-[-60px] h-[1px]">
+              <Image src={heroshadow} alt="heroshadow" />
+            </div>
+            <div className="flex  relative top-[-50px] justify-center items-center ">
               <div className=" border-green-600  sm:w-[100%] md:w-[100%] lg:w-[100%] xl:w-[100%] rounded-t-lg  ">
                 <Image src={group} alt="Image" className="w-full  h-auto " />
               </div>
+              
             </div>
           </div>
         </div>

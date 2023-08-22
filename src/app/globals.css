@@ -23,7 +23,7 @@ body {
    border: .1px solid black;
   background-image: url("../../assets/Grouphero.svg");
   background-color: black;
-  /* border-radius: 10px; */
+  
 }
 
 .bg-navbar {
@@ -32,16 +32,13 @@ body {
 
 .nav-main-box{
    background: #1F141F;
-   clip-path: polygon(3% 0%, 97% 0%, 100% 50%, 97% 100%, 3% 100%, 0% 55%);
-     /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 8px)); */
-   /* border: 1px solid red; */
+   /* clip-path: polygon(3% 0%, 97% 0%, 100% 50%, 97% 100%, 3% 100%, 0% 55%); */
 }
 
 .main-nav-con{
-   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+   box-shadow: rgba(42, 40, 40, 0.3) 0px 10px 8px, rgba(14, 12, 12, 0.22) 0px 5px 2px;
    background-image: url('../../assets/Navboxshadow.svg'); 
    position: fixed;
-   opacity: 24;
    border-radius: 30px;
    margin-bottom: 30px;
    z-index: 3; 
@@ -110,6 +107,11 @@ text-align: center;
     /* border: 2px solid; */
 }
 
+.heroshadow{
+  background-image: url('../../assets/heroboxshadow.png');  
+}
+
+ /**game start*/
 .Games-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -318,24 +320,35 @@ letter-spacing: 0em;
 
 /* Swiper */
 
-/* Swiper.css */
 .swiper-container {
   width: 300px;
   height: 200px;
 }
 
 .swiper-dot {
-  width: 100px;
-  height: 100px;
+   /* border: 2px solid rgb(225, 15, 50); */
+  /* width:  400px; */
+  /* height: 100px; */
   /* background-color: #888; */
-  border-radius: 50%;
-  margin: 0 5px;
+  /* border-radius: 50%; */
+  /* margin: 0 5px; */
   cursor: pointer;
   transition: width 0.3s ease, height 0.3s ease;
 }
 
-.swiper-dot.selected {
-  width: 14px;
-  height: 14px;
-  background-color: #333;
+.Image{
+ /* border: 2px solid rgb(193, 140, 25); */
+ width: 100px;
+}
+
+
+
+.user-descrip.selected{
+  color: #ffffff;
+}
+
+.congrs.selected {
+   /* background-image: url('../../assets/flyingconfetti.svg'); */
+   background-image: url('../../assets/flying.svg');
+   width: 400px;
 }

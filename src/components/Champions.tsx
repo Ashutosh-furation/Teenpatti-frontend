@@ -8,7 +8,7 @@ import gamelogo from "../../assets/Gamelogo.svg"
 
 const Champions: React.FC = () => {
   return (
-    <div className="w-[100%] h-[105vh]  m-auto border-pink-400 champ-con">
+    <div className=" w-[100%] h-[115vh]  m-auto border-green-600 champ-con">
       <div className=" w-[100%]  h-[15vh] m-auto p-5 flex justify-between  border-green-600">
         <div className="w-[15%]  border-red-700">
           <Image src={champrectangle} alt="logo" className="mt-[-2px]" />

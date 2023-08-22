@@ -7,12 +7,12 @@ import Image from "next/image";
 
 const GamedetailSwiper: React.FC = () => {
   return (
-    <div className=" m-auto mt-5 border-yellow-500">
+    <div className="m-auto mt-5 border-yellow-500">
       <div className="w-[90%] m-auto  border-pink-500 h-[37rem] Games-container">
         {Gamedetail.length > 0 &&
           Gamedetail.map((game) => {
             return (
-              <div className="w-[25vw] m-auto game-box-con" key={game.id}>
+              <div className="w-[25vw]  m-auto game-box-con" key={game.id}>
                 <div className="flex  justify-center items-center ">
                   <div className="bg-gray-300  border-green-600  sm:w-[100%] md:w-[100%] lg:w-[100%] xl:w-[100%] rounded-t-lg  avatar-box">
                     <div className="bg-AD0B40-500 image-color">
@@ -37,13 +37,13 @@ const GamedetailSwiper: React.FC = () => {
                   <div className="h-[8vh]   float-left  m-auto">
                     <p className="text-white font-title"> {game.Title} </p>
                   </div>
-                  <div className="h-[9vh]   float-left  m-auto mt-9 ">
+                  <div className="h-[9vh]   float-left  m-auto mt-5 ">
                     <p className="text-white  marriage-des">
                       {game.description}
                     </p>
                   </div>
 
-                  <div className=" flex w-[100%] h-[50px] float-left items-center justify-center text-center  m-auto mt-10 border-white-500 play-button">
+                  <div className=" flex w-[100%] h-[50px] float-left items-center justify-center text-center  m-auto mt-5 border-white-500 play-button">
                     <button className="text-white m-auto  text-center play">
                       Play Now
                     </button>

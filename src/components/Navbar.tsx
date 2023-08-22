@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
 
 
   return (
-    <nav className="h-[11vh]  w-[100%]  flex justify-between items-center bg-navbar">
+    <nav className="h-[10vh]  w-[100%]  flex justify-between items-center bg-navbar">
       <div className="flex items-center">
         <div className="p-5">
           <GiHamburgerMenu className="h-[2rem] w-[1.2rem] text-white cursor-pointer" />
