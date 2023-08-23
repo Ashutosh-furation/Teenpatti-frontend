@@ -3,7 +3,6 @@ import Marriage from "../../../assets/marrige.svg";
 import community from "../../../assets/comnity.svg";
 
 /**  */
-import teenpatigame from "../../../assets/Teenpatti.png";
 
 import insta from "../../../assets/Insta play.svg";
 import exlusive from "../../../assets/Exlusive.svg";
@@ -24,9 +23,9 @@ import exclusivethird from "../../../assets/exclusivethird.svg";
  * champions data
  */
 
-import nathanimg from "../../../assets/champfirst.svg";
-import nathansec from "../../../assets/markaroy.svg";
-import nathanthird from "../../../assets/champthird.svg";
+import nathanimg from "../../../assets/champfir.svg";
+import nathansec from "../../../assets/Marka.svg";
+import nathanthird from "../../../assets/champSE.svg";
 
 import GameFeatureImage1 from "../../../assets/gameFeatureImage1.svg";
 import GameFeatureImage2 from "../../../assets/gameFeatureImage2.svg";
@@ -134,9 +133,9 @@ export const Championsdata = [
       "I love playing at Sikka Play because of massive bonuses- theres always rewards waiting for us.",
   },
   {
-    id: 4,
-    avatar: nathanthird,
-    username: "Bibek Burke",
+    id: 1,
+    avatar: nathanimg,
+    username: "Nathan Bishop",
     userdes:
       "I love playing at Sikka Play because of massive bonuses- theres always rewards waiting for us.",
   },

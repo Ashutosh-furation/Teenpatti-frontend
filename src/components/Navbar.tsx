@@ -9,8 +9,8 @@ const Navbar: React.FC = () => {
 
 
   return (
-    <nav className="h-[10vh]  w-[100%]  flex justify-between items-center bg-navbar">
-      <div className="flex items-center">
+    <nav className="h-[10vh]   w-[100%]  flex justify-between items-center bg-navbar">
+      <div className="flex  items-center">
         <div className="p-5">
           <GiHamburgerMenu className="h-[2rem] w-[1.2rem] text-white cursor-pointer" />
         </div>
@@ -18,11 +18,13 @@ const Navbar: React.FC = () => {
       {/* <div className="text-white font-bold text-center text-lg">
           <Image src={Logo} alt="Logo" />
         </div> */}
-      <div className="text-white font-bold text-center">
-        <p className="text-center m-auto  text-white game-text"> Logo</p>
+      <div className="text-white w-[20%] font-bold ">
+        <p className=" float-right text-white game-text">
+          Logo
+        </p>
       </div>
 
-      <div className="flex items-center space-x-4 p-5">
+      <div className="flex  items-center space-x-4 p-5">
         <button className="bg-blue-500 w-[5.8rem]  text-white px-4 py-2 rounded bg-login">
           Login
         </button>

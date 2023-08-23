@@ -2,10 +2,7 @@
 
 import Image from 'next/image';
 import React from 'react'
-import insta from "../../assets/Insta play.svg"
-import  exlusive from "../../assets/Exlusive.svg"
-import legal from "../../assets/Legal.svg"
-import safe from "../../assets/safe.svg"
+
 import suffleAnimation from "../../assets/https___lottiefiles.com_animations_ace-of-spade-XlKBNiUy5Q.gif";
 import { Exploredata } from "./data/Data.js";
 // console.log("Exploredata", Exploredata);
@@ -14,7 +11,7 @@ import { Exploredata } from "./data/Data.js";
 const Explore: React.FC = () => {
 
   return (
-    <div className="w-[100%]  h-[60vh] explore-container">
+    <div className="w-[100%]  h-[64vh] explore-container">
       <div className="h-[50px] mt-4 text-center relative top-5  border-green-500">
         <h1 className="text-center explore-font"> Explore Sikka Play </h1>
       </div>
@@ -47,8 +44,8 @@ const Explore: React.FC = () => {
                                   : "100px",
                               height:
                                 data.id === 1 || data.id === 2
-                                  ? "90px"
-                                  : "65px",
+                                  ? "110px"
+                                  : "80px",
                               
                             }}
                           />
@@ -65,13 +62,13 @@ const Explore: React.FC = () => {
             })}
         </div>
 
-        <div className="text-center  w-[25vw] h-[25vh] border-white-500 mt-10 border-white-500">
+        <div className="text-center  w-[25vw] h-[20vh] border-white-500 mt-10 border-white-500">
           <div className=" border-yellow-500">
             <Image
               src={suffleAnimation}
               alt="explore"
-              width={700}
-              height={700}
+              width={600}
+              height={600}
             />
           </div>
         </div>

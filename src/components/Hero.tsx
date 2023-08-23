@@ -5,12 +5,11 @@ import Image from "next/image";
 import sikka from "../../assets/sikkafontfilled 4.svg";
 import Rectangle from "../assets/Rectangle.png";
 import Navbar from "./Navbar";
-import group 
-from "../../assets/Group 152.svg";
+import group from "../../assets/Group 152.svg";
 import HeroRect from "./HeroRect";
 import Nav from "./Nav";
-import navlogo from "../../assets/onlyNavbar.svg"
-import heroshadow from "../../assets/heroboxshadow.png"
+import navlogo from "../../assets/onlyNavbar.svg";
+import heroshadow from "../../assets/heroboxshadow.png";
 
 const Hero: React.FC = () => {
   return (
@@ -23,15 +22,29 @@ const Hero: React.FC = () => {
             </div>
           </div>
         </div> */}
-        <div className="h-[20%] relative top-0 w-[100%] m-auto   border-green-600  main-nav-con">
-          <div className="w-[95%]  h-[4rem]  m-auto relative top-5">
+        {/* ---------------------------------- */}
+        {/* <div className="h-[20%] relative top-0 w-[100%] m-auto   border-green-600  main-nav-con">
+          <div className="w-[95%]  h-[4rem]  m-auto relative left-5 top-5">
             <Image src={navlogo} alt="gamelogo" className="m-auto" />
           </div>
-          <div className=" h-[4rem] w-[85%] p-2 relative top-[-26%] m-auto ">
+          <div className=" h-[4rem] w-[85%] p-2 relative  top-[-26%] m-auto ">
+            <Navbar />
+          </div>
+        </div> */}
+        
+        /** */
+        <div className="h-[20%]  w-[100%] m-auto  relative top-0    border-green-600  main-nav-con">
+          <div className=" w-[100%]  h-[5rem]  m-auto  text-center justify-center items-center  border-green-500  relative left-5 top-4">
+            <Image
+              src={navlogo}
+              alt="gamelogo"
+              className="m-auto  h-[6rem]  nav-background-img "
+            />
+          </div>
+          <div className="w-[85%]  m-auto relative top-[-38%] nav-con-relative ">
             <Navbar />
           </div>
         </div>
-      
         <div className=" w-[90%]  h-[75vh] m-auto mt-40 border-green-500 flex justify-between">
           <div className="w-[70%]  h-[20rem] m-auto border-yellow-500">
             <div className=" w-[100%]  h-[20vh] border-pink-500">
@@ -59,14 +72,13 @@ const Hero: React.FC = () => {
                 className=" m-auto justify-center"
               />
             </div> */}
-            <div className="heroshadow relative top-[-60px] h-[1px]">
+            <div className="heroshadow  relative top-[-60px] h-[1px]">
               <Image src={heroshadow} alt="heroshadow" />
             </div>
             <div className="flex  relative top-[-50px] justify-center items-center ">
-              <div className=" border-green-600  sm:w-[100%] md:w-[100%] lg:w-[100%] xl:w-[100%] rounded-t-lg  ">
-                <Image src={group} alt="Image" className="w-full  h-auto " />
+              <div className=" h-[30%] border-green-600  sm:w-[100%] md:w-[100%] lg:w-[100%] xl:w-[100%] m-auto rounded-t-lg  ">
+                <Image src={group} alt="Image" className="h-[30%] m-auto" />
               </div>
-              
             </div>
           </div>
         </div>

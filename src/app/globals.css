@@ -1,4 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Lato:ital@1&display=swap'); */
+
 @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Lato:ital@1&display=swap");
 
 @tailwind base;
@@ -15,12 +16,11 @@ body {
 
 .Navbar-box{
   border: 1px solid green;
-   /* background-image: url('../../assets/navbarborder.png'); */
-}
+  }
 
 
 .hero-pattern {
-   border: .1px solid black;
+   /* border: .1px solid black; */
   background-image: url("../../assets/Grouphero.svg");
   background-color: black;
   
@@ -32,7 +32,6 @@ body {
 
 .nav-main-box{
    background: #1F141F;
-   /* clip-path: polygon(3% 0%, 97% 0%, 100% 50%, 97% 100%, 3% 100%, 0% 55%); */
 }
 
 .main-nav-con{
@@ -42,6 +41,14 @@ body {
    border-radius: 30px;
    margin-bottom: 30px;
    z-index: 3; 
+}
+
+@media screen and  (max-width:1166px) {
+  .nav-con-relative{
+    /* border: 1px solid yellow; */
+    position: relative;
+    top: -36%;
+  }
 }
 
 .extra-Rec{
@@ -72,9 +79,9 @@ body {
 /**------------- hero section----------------------*/
 
 .p-text {
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   color: rgba(255, 255, 255, 0.8);
-  letter-spacing: .8px;
+  letter-spacing: .4px;
   font-size: 1.2rem;
 }
 
@@ -86,7 +93,7 @@ body {
 
 .game-text{
   font-family: "Bricolage Grotesque";
-font-size: 2rem;
+font-size: 3rem;
 font-weight: 400;
 line-height: 3rem;
 letter-spacing: 0em;
@@ -104,7 +111,6 @@ text-align: center;
 .game-logo {
   background-color: rgba(180, 14, 13, 0.15);
     clip-path: polygon(5% 0%, 95% 0%, 100% 50%, 95% 100%, 5% 100%, 0% 50%);
-    /* border: 2px solid; */
 }
 
 .heroshadow{
@@ -115,12 +121,10 @@ text-align: center;
 .Games-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
 }
 
 .game-box-con {
   border: .1px solid #ad0b40;
-  border-radius: 10px;
   background: linear-gradient(
     180deg,
     rgba(75, 73, 74, 0.7) 57.81%,
@@ -133,16 +137,26 @@ text-align: center;
     ),
     linear-gradient(0deg, #b40e0d, #b40e0d);
   box-shadow: 0px 0px 10px 0px #f442b799;
+   border-radius: 20px;
 }
 
 .avatar-box {
-  /* border: 10px solid; */
-  border: 10px solid #AD0B40;
- 
+  /* border: 10px solid #AD0B40; */
+  border: 10px solid transparent;
+  border-image: linear-gradient(to right, #AD0B40, #FF1917); /* Set linear gradient */
+  border-image-slice: 1; /* Ensure the gradient covers the entire border */
+  /* padding: 20px;  */
+  border-radius: 30px;
 }
 
 .image-color{
-  background-color: #AD0B40;
+  /* background-color: #AD0B40; */
+   background: linear-gradient(
+    111.16deg,
+     #AD0B40 9.86%,
+    #ff1917 63.95%
+  );
+  /* border: 2px solid yellow; */
 }
 
 .marriage-des {
@@ -157,10 +171,6 @@ text-align: center;
 
 .font-title {
   font-family: "Bricolage Grotesque";
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 2rem;
-  letter-spacing: 0em;
   text-align: left;
   margin-bottom: 5px;
 }
@@ -177,7 +187,6 @@ text-align: center;
 }
 
 .play {
-
   font-family: "Lato";
   font-weight: 500;
   line-height: 22px;
@@ -241,7 +250,7 @@ text-align: center;
 }
 
 .playexclusive {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato";
   margin-top: 20px;
   font-size: 1.5rem;
   font-weight: 500;
@@ -252,7 +261,6 @@ text-align: center;
 }
 
 .play-button-exclusive {
-  /* border: 1px solid; */
   align-items: center;
   justify-content: center;
   background: linear-gradient(
@@ -268,14 +276,12 @@ text-align: center;
 
 .champ-con {
   border: .1px solid rgb(0, 0, 0);
-
   background: rgb(7,7,7);
 background: linear-gradient(0deg, rgba(7,7,7,1) 66%, rgba(19,9,28,1) 100%);
 }
 .champ-logo {
   background-color: rgba(180, 14, 13, 0.15);
   font-family: "Bricolage Grotesque";
-  /* font-family: 'Marbley Free'; */
   font-size: 2.2rem;
   font-weight: 400;
   line-height: 3rem;
@@ -285,7 +291,7 @@ background: linear-gradient(0deg, rgba(7,7,7,1) 66%, rgba(19,9,28,1) 100%);
 .champ-text{
   font-family: 'Marbley Free';
   color: #ffffff;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   font-weight: 400;
   line-height: 1.5rem;
   letter-spacing: 0em; 
@@ -306,6 +312,7 @@ font-size: 1.6rem;
 font-weight: 400;
 line-height: 34px;
 letter-spacing: 0em;
+color: #6E6E6E;
 }
 
 
@@ -313,65 +320,32 @@ letter-spacing: 0em;
   font-family: 'Lato';
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.1rem;
+  line-height: 1.3rem;
   letter-spacing: 0em;
-  text-align: center;
-  color: rgba(110, 110, 110, 1);
 }
 
 
-/* Swiper */
-
-.swiper-container {
-  width: 300px;
-  height: 200px;
-}
-
+/* ----------- Swiper ------------  */
 .swiper-dot {
-   /* border: 2px solid rgb(225, 15, 50); */
-  /* width:  400px; */
-  /* height: 100px; */
-  /* background-color: #888; */
-  /* border-radius: 50%; */
-  /* margin: 0 5px; */
-  cursor: pointer;
   transition: width 0.3s ease, height 0.3s ease;
 }
 
 .Image{
- /* border: 2px solid rgb(193, 140, 25); */
  width: 100px;
- /* opacity: .5; */
-}
-
-/* .Image.Selected{
-  opacity: 5;
-} */
-
-
-
-.userimage.selected{
-  opacity: 2;
 }
 
 .user-descrip.selected{
-  color: #ffffff;
+  color: #ffffff;  
 }
 
-.congrs.selected {
-   /* background-image: url('../../assets/flyingconfetti.svg'); */
+.congrs.selected {  
    background-image: url('../../assets/flying.svg');
    width: 400px;
 }
 
+
 /***** ----------------------------- ********* /
 /* ImageSwiper.module.css */
-.swiperContainer {
-  /* width: 100%; */
-  /* max-width: 800px; Adjust as needed */
-  /* margin: 0 auto;
-  position: relative; */
-}
 
 .swiperButtonPrev,
 .swiperButtonNext {
