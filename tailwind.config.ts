@@ -18,5 +18,8 @@ const config: Config = {
     },
   },
   plugins: [],
+  fontFamily: {
+    marbley: ["marbley"],
+  },
 };
 export default config;

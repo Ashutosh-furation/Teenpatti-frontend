@@ -10,24 +10,18 @@ import gamelogo from "../../public/assets/Gamelogo.svg"
 const Game: React.FC =() => {
   return (
     <div>
-      <div className="w-[100%] h-[850px]  border-yellow-500  game-background">
+      <div className="w-[100%] h-[850px]  border-yellow-500  bg-[black]">
         <div className="w-[100%] border- p-3 m-auto text-center  flex justify-between">
           <div className=" w-[5rem] relative top-20 border-pink-500">
             <Image src={card} alt="card" />
           </div>
 
-          {/* <div className="border-2 w-[40%] h-[76px] m-auto text-white font-bold text-center text-lg border-pink-500 game-logo">
-            <p className="text-center m-auto mt-3 text-white game-text">
-              {" "}
-              Games
-            </p>
-          </div> */}
           <div>
-            <div className="w-[100%] h-[76px] m-auto text-white font-bold text-center text-lg border-pink-500 ">
+            <div className="w-[100%] h-[76px] m-auto text-white font-bold text-center text-2xl border-pink-500 ">
               <Image src={gamelogo} alt="gamelogo" />
             </div>
             <div className=" relative top-[-60px]">
-              <p className="flex text-center justify-center  text-white game-text">
+              <p className="flex  justify-center  text-white expl-text  text-4xl font-normal leading-[3rem] tracking-[0em] text-center">
                 {" "}
                 Games
               </p>

@@ -59,7 +59,7 @@ const ChampionCard: React.FC = () => {
                         width: activeIndex === index ? "250px" : "150px",
                         opacity: activeIndex === index ? "3" : ".5",
                         border: activeIndex === index ? "5px solid red" : "",
-                        // boxshadow : activeIndex === index ?   
+                        // boxshadow : activeIndex === index ?
                       }}
                     >
                       <Image
@@ -71,7 +71,7 @@ const ChampionCard: React.FC = () => {
 
                   <div className=" border-green-600 mt-5">
                     <p
-                      className="text-center  text-white user-name"
+                      className="text-center  expl-text font-normal text-2xl leading-8 tracking-normal text-gray-600"
                       style={{
                         color: activeIndex === index ? "#ffffff" : "#6E6E6E",
                       }}
@@ -80,9 +80,11 @@ const ChampionCard: React.FC = () => {
                       {data.username}
                     </p>
                   </div>
-                  <div className="border-green-600 mt-5 ">
+                  <div className="border-green-600 mt-4 ">
                     <p
-                      className={`${index + 1} text-center  user-descrip`}
+                      className={`${
+                        index + 1
+                      } text-center  font-lato text-lg font-normal leading-5 tracking-normal`}
                       style={{
                         color: activeIndex === index ? "#ffffff" : "#6E6E6E",
                       }}

@@ -12,8 +12,11 @@ const Explore: React.FC = () => {
 
   return (
     <div className="w-[100%]  h-[64vh] explore-container">
-      <div className="h-[50px] mt-4 text-center relative top-5  border-green-500">
-        <h1 className="text-center explore-font"> Explore Sikka Play </h1>
+      <div className="h-[50px] mt-8 text-center relative top-5  border-green-500">
+        <h1 className="text-center expl-text font-marbley text-white text-4xl font-normal leading-3 tracking-[0em]">
+          {" "}
+          Explore Sikka Play{" "}
+        </h1>
       </div>
 
       <div className="w-[100%] h-[35vh]  m-auto relative top-10  border-yellow-600 flex justify-around">
@@ -26,10 +29,6 @@ const Explore: React.FC = () => {
                   key={data.id}
                 >
                   <div className="  text-center  m-auto justify-center border-yellow-500">
-                    {/* <div className="w-[100%] border-2 border-green-600  h-[125px] m-auto mt-1 text-center">
-                      <Image src={data.img} alt="insta" className="m-auto" />
-                    </div> */}
-
                     <div className="flex  justify-center items-center ">
                       <div className="h-[15vh] m-auto justify-center items-center  border-green-600   ">
                         <div className="h-[30%] object-fill">
@@ -52,7 +51,9 @@ const Explore: React.FC = () => {
                     </div>
 
                     <div className="mt-5">
-                      <p className="offer-title">{data.Title} </p>
+                      <p className="text-white text-2xl font-normal leading-loose tracking-normal expl-text">
+                        {data.Title}{" "}
+                      </p>
                     </div>
                   </div>
                 </div>

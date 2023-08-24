@@ -13,6 +13,17 @@ body {
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: myFont;
+  src: url(BillionaRegular-jElgy.ttf);
+}
+
+@font-face {
+  font-family: marbley;
+  src: url(MarbleyfreeRegular-vm857.otf);
+}
+
+
      
 
 /* ----------------------------------------------------------------- */
@@ -25,25 +36,6 @@ body {
    z-index: 3; 
 }
 
-@media screen and  (max-width:1166px) {
-  .nav-con-relative{
-    position: relative;
-    top: -36%;
-  }
-}
-
-
-.bg-login {
-  background-color: rgba(180, 14, 13, 0.15);
-  color: #ffffff;
-  border: 0.5px solid #ffffff;
-}
-
-.bg-signup {
-  background-color: #ffffff;
-  color: #ad0b40;
-  border: 0.5px solid #ffffff;
-}
 
 .join-button {
   background: linear-gradient(
@@ -51,54 +43,10 @@ body {
     rgba(173, 11, 64, 0.878431) 9.86%,
     #ff1917 63.95%
   );
+  /* bg-gradient-to-br from-[rgba(173, 11, 64, 0.878431)] to-[#ff1917] */
 }
 
 /**------------- hero section----------------------*/
-
-.p-text {
-  font-family: "Lato", sans-serif;
-  color: rgba(255, 255, 255, 0.8);
-  letter-spacing: .4px;
-  font-size: 1.2rem;
-}
-
-/* game css*/
-
-.game-background {
-  background-color: black;
-}
-
-.game-text{
-  font-family: "Bricolage Grotesque";
-font-size: 3rem;
-font-weight: 400;
-line-height: 3rem;
-letter-spacing: 0em;
-text-align: center;
-}
-.game-box {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.77), rgba(0, 0, 0, 0.77)),
-    linear-gradient(
-      180deg,
-      rgba(244, 66, 183, 0) 0%,
-      rgba(255, 192, 0, 0.3) 100%
-    );
-}
-
-.game-logo {
-  background-color: rgba(180, 14, 13, 0.15);
-    clip-path: polygon(5% 0%, 95% 0%, 100% 50%, 95% 100%, 5% 100%, 0% 50%);
-}
-
-.heroshadow{
-  background-image: url('../../public/assets/heroboxshadow.png');  
-}
-
- /**game start*/
-.Games-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
 
 .game-box-con {
   border: .1px solid #ad0b40;
@@ -114,43 +62,34 @@ text-align: center;
     ),
     linear-gradient(0deg, #b40e0d, #b40e0d);
   box-shadow: 0px 0px 10px 0px #f442b799;
-   border-radius: 20px;
+   border-radius: 30px;
+   /* border-[0.1px] border-[#ad0b40] bg-gradient-to-t from-[rgba(75, 73, 74, 0.7)] via-[rgba(0, 0, 0, 0.7)] border-[linear-gradient(111.16deg, rgba(173, 11, 64, 0.878431) 9.86%, #ff1917 63.95%), linear-gradient(0deg, #b40e0d, #b40e0d)] shadow-md rounded-[20px] */
 }
 
 .avatar-box {
-  /* border: 10px solid #AD0B40; */
-  border: 10px solid transparent;
-  border-image: linear-gradient(to right, #AD0B40, #FF1917); /* Set linear gradient */
-  border-image-slice: 1; /* Ensure the gradient covers the entire border */
-  /* padding: 20px;  */
-  border-radius: 30px;
+   /* border: 10px solid transparent;
+  border-image: linear-gradient(to right, #AD0B40, #FF1917); 
+  border-image-slice: 2;  */
+    border: 10px solid #FF1917;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .image-color{
-  /* background-color: #AD0B40; */
-   background: linear-gradient(
+   /* background: linear-gradient(
     111.16deg,
      #AD0B40 9.86%,
     #ff1917 63.95%
+  ); */
+   background: linear-gradient(
+    111.16deg,
+     #ff1917 9.86%,
+    #ff1917 63.95%
   );
-  /* border: 2px solid yellow; */
+ 
 }
 
-.marriage-des {
-  color: rgba(255, 255, 255, 0.6);
-  font-family: "Lato";
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.2rem;
-  letter-spacing: 0em;
-  text-align: left;
-}
 
-.font-title {
-  font-family: "Bricolage Grotesque";
-  text-align: left;
-  margin-bottom: 5px;
-}
 
 .play-button {
   /* border: 1px solid green; */
@@ -161,14 +100,7 @@ text-align: center;
     rgba(173, 11, 64, 0.878431) 9.86%,
     #ff1917 63.95%
   );
-}
-
-.play {
-  font-family: "Lato";
-  font-weight: 500;
-  line-height: 22px;
-  letter-spacing: 0em;
-  text-align: left;
+  /* rounded-[8px] flex items-center bg-[linear-gradient(111.16deg, rgba(173, 11, 64, 0.878431) 9.86%, #ff1917 63.95%)] */
 }
 
 /*  Explore sikka play */
@@ -178,14 +110,6 @@ text-align: center;
   background: #150e1c;
 }
 
-.explore-font {
-  font-family: "Bricolage Grotesque";
-  color: #ffffff;
-  font-size: 3rem;
-  font-weight: 400;
-  line-height:3rem;
-  letter-spacing: 0em;
-}
 
 .explore-offer {
   display: grid;
@@ -193,38 +117,28 @@ text-align: center;
   gap: 10px;
 }
 
-.offer-title {
+.expl-text{
+  font-family: 'marbley';
+}
+
+/* .offer-title {
   font-family: "Bricolage Grotesque";
   color: #ffffff;
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.5rem;
   letter-spacing: 0em;
-}
+} */
 
 .exclusive-text{
-   font-family: "Bricolage Grotesque";
+   font-family: "marbley";
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   font-weight: 400;
   line-height: 1.5rem;
   letter-spacing: 0em;
 }
 
-/** Exlsusive offers */
-
-.exclusivebackground {
-  background-color: black;
-}
-
-.exclusive-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-}
-.exclusive-box {
-  box-shadow: 0px 4px 20px 0px #ffc0004d;
-}
 
 .playexclusive {
   font-family: "Lato";
@@ -258,7 +172,7 @@ background: linear-gradient(0deg, rgba(7,7,7,1) 66%, rgba(19,9,28,1) 100%);
 }
 .champ-logo {
   background-color: rgba(180, 14, 13, 0.15);
-  font-family: "Bricolage Grotesque";
+  font-family: "marbley";
   font-size: 2.2rem;
   font-weight: 400;
   line-height: 3rem;
@@ -266,7 +180,7 @@ background: linear-gradient(0deg, rgba(7,7,7,1) 66%, rgba(19,9,28,1) 100%);
 }
 
 .champ-text{
-  font-family: 'Marbley Free';
+  font-family: 'marbley';
   color: #ffffff;
   font-size: 2.5rem;
   font-weight: 400;
@@ -276,25 +190,25 @@ background: linear-gradient(0deg, rgba(7,7,7,1) 66%, rgba(19,9,28,1) 100%);
 .champ-talk{
  background-color: rgba(180, 14, 13, 0.15);
   clip-path: polygon(5% 0%, 95% 0%, 100% 50%, 95% 100%, 5% 100%, 0% 50%);
-  font-family: "Bricolage Grotesque";
+  font-family: "marbley";
   font-size: 2.2rem;
   font-weight: 400;
   line-height: 3rem;
   letter-spacing: 0em;
 }
 
-.user-name{
+/* .user-name{
  font-family: "Bricolage Grotesque";
 font-size: 1.6rem;
 font-weight: 400;
 line-height: 34px;
 letter-spacing: 0em;
 color: #6E6E6E;
-}
+} */
 
 
 .user-descrip{
-  font-family: 'Lato';
+  font-family: 'Lato',sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.3rem;

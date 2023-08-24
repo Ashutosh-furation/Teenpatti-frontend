@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
             </div>
 
             <div className="w-[80%]  h-[13vh] mt-5 border-pink-500">
-              <p className="text-white font-[500] leading-[2rem] p-text">
+              <p className="text-white font-[500] leading-[2rem] font-Lato text-[rgba(255, 255, 255, 0.8)] tracking-[0.4px] text-lg">
                 Experience boundless amusement on ultimate betting platform!
                 Unfold endless entertainment.
               </p>
