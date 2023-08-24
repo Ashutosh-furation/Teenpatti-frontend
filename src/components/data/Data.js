@@ -1,43 +1,43 @@
-import Teenpatti from "../../../assets/Teenpti.svg";
-import Marriage from "../../../assets/marrige.svg";
-import community from "../../../assets/comnity.svg";
+import Teenpatti from "../../../public/assets/Teenpti.svg";
+import Marriage from "../../../public/assets/marrige.svg";
+import community from "../../../public/assets/comnity.svg";
 
 /**  */
 
-import insta from "../../../assets/Insta play.svg";
-import exlusive from "../../../assets/Exlusive.svg";
-import legal from "../../../assets/Legal.svg";
-import safe from "../../../assets/safe.svg";
+import insta from "../../../public/assets/Insta play.svg";
+import exlusive from "../../../public/assets/Exlusive.svg";
+import legal from "../../../public/assets/Legal.svg";
+import safe from "../../../public/assets/safe.svg";
 
-import instaim from "../../../assets/Device.svg";
-import exlusiveim from "../../../assets/Offer (1).svg";
-import safeim from "../../../assets/Vector (2).svg";
-import legalim from "../../../assets/Term (1).svg";
+import instaim from "../../../public/assets/Device.svg";
+import exlusiveim from "../../../public/assets/Offer (1).svg";
+import safeim from "../../../public/assets/Vector (2).svg";
+import legalim from "../../../public/assets/Term (1).svg";
 
 /** Exclusive  */
-import exclusivefirst from "../../../assets/exclusivefirst.svg";
-import exclusivesecond from "../../../assets/exclusivesecond.svg";
-import exclusivethird from "../../../assets/exclusivethird.svg";
+import exclusivefirst from "../../../public/assets/exclusivefirst.svg";
+import exclusivesecond from "../../../public/assets/exclusivesecond.svg";
+import exclusivethird from "../../../public/assets/exclusivethird.svg";
 
 /**
  * champions data
  */
 
-import nathanimg from "../../../assets/champfir.svg";
-import nathansec from "../../../assets/Marka.svg";
-import nathanthird from "../../../assets/champSE.svg";
+import nathanimg from "../../../public/assets/champfir.svg";
+import nathansec from "../../../public/assets/Marka.svg";
+import nathanthird from "../../../public/assets/champSE.svg";
 
-import GameFeatureImage1 from "../../../assets/gameFeatureImage1.svg";
-import GameFeatureImage2 from "../../../assets/gameFeatureImage2.svg";
-import GameFeatureImage3 from "../../../assets/gameFeatureImage3.svg";
+import GameFeatureImage1 from "../../../public/assets/gameFeatureImage1.svg";
+import GameFeatureImage2 from "../../../public/assets/gameFeatureImage2.svg";
+import GameFeatureImage3 from "../../../public/assets/gameFeatureImage3.svg";
 
-import EGF from "../../../assets/EGF.svg";
-import FIFS from "../../../assets/FIFS.svg";
-import AIGF from "../../../assets/AIGF.svg";
+import EGF from "../../../public/assets/EGF.svg";
+import FIFS from "../../../public/assets/FIFS.svg";
+import AIGF from "../../../public/assets/AIGF.svg";
 
-import paytmImg from "../../../assets/paytm-img.svg";
-import googleImg from "../../../assets/google-img.svg";
-import UpiImg from "../../../assets/UPI-img.svg";
+import paytmImg from "../../../public/assets/paytm-img.svg";
+import googleImg from "../../../public/assets/google-img.svg";
+import UpiImg from "../../../public/assets/UPI-img.svg";
 
 export const Gamedetail = [
   {

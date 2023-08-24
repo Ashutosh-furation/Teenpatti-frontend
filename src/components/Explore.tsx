@@ -36,7 +36,6 @@ const Explore: React.FC = () => {
                           <Image
                             src={data.img}
                             alt="Image"
-                            
                             style={{
                               width:
                                 data.id === 1 || data.id === 2
@@ -46,7 +45,6 @@ const Explore: React.FC = () => {
                                 data.id === 1 || data.id === 2
                                   ? "110px"
                                   : "80px",
-                              
                             }}
                           />
                         </div>
@@ -65,7 +63,9 @@ const Explore: React.FC = () => {
         <div className="text-center  w-[25vw] h-[20vh] border-white-500 mt-10 border-white-500">
           <div className=" border-yellow-500">
             <Image
-              src={suffleAnimation}
+              src={
+                "/assets/https___lottiefiles.com_animations_ace-of-spade-XlKBNiUy5Q.gif"
+              }
               alt="explore"
               width={600}
               height={600}

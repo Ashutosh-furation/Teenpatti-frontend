@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { ChevronUp, ChevronDown } from "lucide-react";
 import Image from "next/image";
-import AceCard from "../../assets/AceCard.svg";
-import BlackChip from "../../assets/BlackChip.svg";
-import GreenChip from "../../assets/GreenChip.svg";
-import PinkChip from "../../assets/PinkChip.svg";
+import AceCard from "../../public/assets/AceCard.svg";
+import BlackChip from "../../public/assets/BlackChip.svg";
+import GreenChip from "../../public/assets/GreenChip.svg";
+import PinkChip from "../../public/assets/PinkChip.svg";
 import { faqData } from "./data/Data";
 const Faq: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(null);

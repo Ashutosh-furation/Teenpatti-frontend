@@ -1,9 +1,9 @@
 import React from 'react'
-import suffleCoin from "../../assets/exclusive-suffle.svg"
-import sufflecard from "../../assets/exclusiveCard (2).svg"
+import suffleCoin from "../../public/assets/exclusive-suffle.svg"
+import sufflecard from "../../public/assets/exclusiveCard (2).svg"
 import Image from 'next/image';
 import ExlcusiveofferCard from './Swiper/ExclusiveofferCard';
-import gamelogo from "../../assets/Gamelogo.svg"
+import gamelogo from "../../public/assets/Gamelogo.svg"
 
 const ExlcusiveOffer: React.FC = () => {
 

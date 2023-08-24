@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import React from 'react'
-import card from "../../assets/Card.svg"
-import coin from "../../assets/cardcoin.svg"
-import game from "../../assets/Games.svg"
+import card from "../../public/assets/Card.svg"
+import coin from "../../public/assets/cardcoin.svg"
+import game from "../../public/assets/Games.svg"
 import GamedetailSwiper from './Swiper/GamedetailSwiper';
-import gamelogo from "../../assets/Gamelogo.svg"
+import gamelogo from "../../public/assets/Gamelogo.svg"
 
 
 const Game: React.FC =() => {

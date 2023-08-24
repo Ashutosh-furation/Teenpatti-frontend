@@ -11,32 +11,14 @@ body {
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
- 
 }
 
-.Navbar-box{
-  border: 1px solid green;
-  }
+     
 
-
-.hero-pattern {
-   /* border: .1px solid black; */
-  background-image: url("../../assets/Grouphero.svg");
-  background-color: black;
-  
-}
-
-.bg-navbar {
-  /* background-color: rgba(180, 14, 13, 0.15); */
-}
-
-.nav-main-box{
-   background: #1F141F;
-}
-
+/* ----------------------------------------------------------------- */
 .main-nav-con{
    box-shadow: rgba(42, 40, 40, 0.3) 0px 10px 8px, rgba(14, 12, 12, 0.22) 0px 5px 2px;
-   background-image: url('../../assets/Navboxshadow.svg'); 
+   background-image: url('../../public/assets/Navboxshadow.svg'); 
    position: fixed;
    border-radius: 30px;
    margin-bottom: 30px;
@@ -45,14 +27,9 @@ body {
 
 @media screen and  (max-width:1166px) {
   .nav-con-relative{
-    /* border: 1px solid yellow; */
     position: relative;
     top: -36%;
   }
-}
-
-.extra-Rec{
-  background-image: url('../../assets/heroGroup.svg');
 }
 
 
@@ -114,7 +91,7 @@ text-align: center;
 }
 
 .heroshadow{
-  background-image: url('../../assets/heroboxshadow.png');  
+  background-image: url('../../public/assets/heroboxshadow.png');  
 }
 
  /**game start*/
@@ -339,34 +316,11 @@ color: #6E6E6E;
 }
 
 .congrs.selected {  
-   background-image: url('../../assets/flying.svg');
+   background-image: url('../../public/assets/flying.svg');
    width: 400px;
 }
 
 
-/***** ----------------------------- ********* /
-/* ImageSwiper.module.css */
-
-.swiperButtonPrev,
-.swiperButtonNext {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 30px;
-  height: 30px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.swiperButtonPrev:hover,
-.swiperButtonNext:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
 
 .image {
   max-width: 100%;

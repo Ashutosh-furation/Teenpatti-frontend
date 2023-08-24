@@ -5,7 +5,7 @@ import { footerSecurity, footerPayment } from "./data/Data";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[url('../../assets/footer-background.svg')] text-white">
+    <footer className="bg-[url('/assets/footer-background.svg')] text-white">
       <div className="footer-conatainer">
         <div className="footer-information px-8 pt-28 text-center">
           <h3 className="text-5xl ">Sikka Play</h3>

@@ -1,10 +1,10 @@
 import React from 'react'
 
-import champrectangle from "../../assets/champ-sidelogo.svg"
+import champrectangle from "../../public/assets/champ-sidelogo.svg"
 import Image from 'next/image';
 import ChampionCard from './Swiper/ChampionCard';
-import sufflecoin from "../../assets/Sufflechamp.svg"
-import gamelogo from "../../assets/Gamelogo.svg"
+import sufflecoin from "../../public/assets/Sufflechamp.svg"
+import gamelogo from "../../public/assets/Gamelogo.svg"
 
 const Champions: React.FC = () => {
   return (
@@ -14,9 +14,7 @@ const Champions: React.FC = () => {
           <Image src={champrectangle} alt="logo" className="mt-[-2px]" />
         </div>
 
-        {/* <div className="flex justify-center items-center border-2 w-[40%] h-[76px] m-auto text-white font-bold text-center text-lg border-pink-500 champ-talk">
-          <p className="text-center  text-white ">Champions Talk</p>
-        </div> */}
+    
         <div className=' border-green-700 relative top-5'>
           <div className="w-[100%] h-[76px] m-auto text-white font-bold text-center  border-pink-500 ">
             <Image src={gamelogo} alt="gamelogo" />
