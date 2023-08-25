@@ -11,22 +11,18 @@ interface FormData {
   password: string;
 };
 
-const page: FC<FormData> = ({}) => {
+const page = () => {
   const [formData, setFormData] = useState<FormData>({
     email: "",
     password: "",
   });
+
    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
      event.preventDefault();
      
      signInWithEmailAndPassword(auth, formData.email, formData.password)
        .then((userCredential) => {
-         // Signed in
-         const user = userCredential.user?.accessToken;
-    
-         localStorage.setItem("acestoken", JSON.stringify(user));
-         console.log("userlogin", user);
-         // console.log("userloginuid", user.uid);
+         
          alert("Login successful!");
        })
        .catch((error) => {

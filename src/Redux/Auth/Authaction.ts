@@ -1,82 +1,82 @@
-import * as types from "./AuthActionTypes";
-import axios from "axios";
+// import * as types from "./AuthActionTypes";
+// import axios from "axios";
 
 
-const getLoginreq = () => {
-  return {
-    type: types.LOGINUSERREQ,
-  };
-};
+// const getLoginreq = () => {
+//   return {
+//     type: types.LOGINUSERREQ,
+//   };
+// };
 
-const getLoginsuccess = (payload:any) => {
-  return {
-    type: types.LOGINUSERSUCESS,
-    payload,
-  };
-};
+// const getLoginsuccess = (payload:any) => {
+//   return {
+//     type: types.LOGINUSERSUCESS,
+//     payload,
+//   };
+// };
 
-const geLoginfailure = () => {
-  return {
-    type: types.LOGINUSERFAILURE,
-  };
-};
+// const geLoginfailure = () => {
+//   return {
+//     type: types.LOGINUSERFAILURE,
+//   };
+// };
 
-// -------------
+// // -------------
 
-const getsignReq = () => {
-  return {
-    type: types.SIGNUPUSERREQ,
-  };
-};
+// const getsignReq = () => {
+//   return {
+//     type: types.SIGNUPUSERREQ,
+//   };
+// };
 
-const getsignSucess = (payload:any) => {
-  return {
-    type: types.SIGNUPUSERSUCESS,
-    payload,
-  };
-};
+// const getsignSucess = (payload:any) => {
+//   return {
+//     type: types.SIGNUPUSERSUCESS,
+//     payload,
+//   };
+// };
 
-const getsignFail = () => {
-  return {
-    type: types.SIGNUPUSERFAILURE,
-  };
-};
-
-
-import { loginApi, userobj } from "./AuthApi";
-
-import { Dispatch } from "redux";
-
-export const Loginpost = () => async (payload:any)=> (dispatch: Dispatch) => {
-     dispatch(getLoginreq())
-      return axios.post('loginApi',payload)
-       .then((r) => {
-      return dispatch(getLoginsuccess(r.data));
-    })
-    .catch((err) => {
-      return dispatch(geLoginfailure());
-    });
-};
+// const getsignFail = () => {
+//   return {
+//     type: types.SIGNUPUSERFAILURE,
+//   };
+// };
 
 
-export const getUsersData = () => async (dispatch: Dispatch) => {
-  try {
-    let response = await loginApi();
+// import { loginApi, userobj } from "./AuthApi";
 
-    dispatch({ type: GET_USERS_DATA, payload: response });
-  } catch (error) {}
-};
+// import { Dispatch } from "redux";
 
-export const setCurrentUser = (userdata: userobj) => async (dispatch: any) => {
-  dispatch({ type: SET_CURRENT_USER, payload: userdata });
-};
+// export const Loginpost = () => async (payload:any)=> (dispatch: Dispatch) => {
+//      dispatch(getLoginreq())
+//       return axios.post('loginApi',payload)
+//        .then((r) => {
+//       return dispatch(getLoginsuccess(r.data));
+//     })
+//     .catch((err) => {
+//       return dispatch(geLoginfailure());
+//     });
+// };
 
-export const makeUserLogout = () => (dispatch: any) => {
-  dispatch({ type: LOGOUT_USER });
-};
-export const updateUserCart = (total: number) => (dispatch: any) => {
-  dispatch({ type: UPDATE_CART_TOTAL, payload: total });
-};
+
+// export const getUsersData = () => async (dispatch: Dispatch) => {
+//   try {
+//     let response = await loginApi();
+
+//     dispatch({ type: GET_USERS_DATA, payload: response });
+//   } catch (error) {}
+// };
+
+// export const setCurrentUser = (userdata: userobj) => async (dispatch: any) => {
+//   dispatch({ type: SET_CURRENT_USER, payload: userdata });
+// };
+
+// export const makeUserLogout = () => (dispatch: any) => {
+//   dispatch({ type: LOGOUT_USER });
+// };
+// export const updateUserCart = (total: number) => (dispatch: any) => {
+//   dispatch({ type: UPDATE_CART_TOTAL, payload: total });
+// };
 
 
 

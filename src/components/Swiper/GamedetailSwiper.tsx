@@ -33,16 +33,13 @@ const GamedetailSwiper: React.FC = () => {
                     </p>
                   </div>
                   <div className="h-[9vh]   float-left  m-auto mt-3 ">
-                    <p
-                      className="text-gray-500   font-Lato text-base font-normal leading-[1.2rem] tracking-[0em] text-left"
-                      style={{ color: "#6E6E6E" }}
-                    >
+                    <p className="  text-base  leading-[1.2rem] tracking-[0em] text-left marriage-des">
                       {game.description}
                     </p>
                   </div>
 
                   <div className=" flex w-[100%] h-[50px] float-left items-center justify-center text-center  m-auto mt-7 border-white-500 play-button">
-                    <button className="text-white m-auto text-2xl text-center font-lato font-medium leading-5 tracking-[0em] ">
+                    <button className="text-white m-auto text-2xl text-center font-lato font-normal leading-5 tracking-[0em] ">
                       Play Now
                     </button>
                   </div>

@@ -54,17 +54,10 @@ export  function AuthContextProvider ({ children ,
     });
     return () => unsubscribe();
   }, []);
+ 
+  const phoneAuthentication = () => {
 
-  // const SetupRecaptcha = (number: string): Promise<void> => {
-  //   // const recaptchaVerifier = new RecaptchaVerifier(
-  //   //   "recaptcha-container",
-  //   //   {},
-  //   //   auth
-  //   // );
-
-  //   // recaptchaVerifier.render();
-  //   // return signInWithPhoneNumber(auth, number, recaptchaVerifier);
-  // };
+  };
 
   return (
     <AuthContext.Provider value={{ googleSignIn, logOut,  AppleSignin }}>

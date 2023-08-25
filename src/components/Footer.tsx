@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
     <footer className="bg-[url('/assets/footer-background.svg')] text-white">
       <div className="footer-conatainer">
         <div className="footer-information px-8 pt-28 text-center">
-          <h3 className="text-5xl ">Sikka Play</h3>
+          <h3 className="text-5xl expl-text">Sikka Play</h3>
           <p className="text-lg text-gray-400 py-14">
             Welcome to Sikkha Play, your ultimate destination for thrilling card
             games and endless entertainment. Immerse yourself in world of
@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="footer-payment-info flex justify-center items-canter pt-14">
           <hr className=" w-[27%] my-auto" />
-          <p className="w-[38%] text-center text-2xl">
+          <p className="w-[38%] text-center expl-text text-2xl">
             Your money is safe with us
           </p>
           <hr className=" w-[27%] my-auto" />

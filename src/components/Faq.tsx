@@ -15,7 +15,7 @@ const Faq: React.FC = () => {
     <section className="mx-auto p-40 bg-[#0c0c0c] text-white relative ">
       <div>
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-6xl font-normal leading-10 text-white sm:text-4xl lg:text-5xl">
+          <h2 className="text-6xl expl-text font-normal leading-10 text-white sm:text-4xl lg:text-5xl">
             Frequently Asked Questions
           </h2>
         </div>
