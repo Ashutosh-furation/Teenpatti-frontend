@@ -4,10 +4,7 @@ import { UserAuth } from "@/app/context/AuthContext";
 import { useEffect, useState } from "react";
 
 const page = () => {
-  const { user, googleSignIn, logOut } = UserAuth();
-  const [loading ,SetLoading]= useState(true)
-
-  console.log("user", user);
+  const {  googleSignIn, logOut } = UserAuth();
 
   const handleSignInWithGoogle = async () => {
     try {
@@ -24,20 +21,11 @@ const page = () => {
       console.log(error);
     }
   };
-    useEffect(() => {
-      const checkAuthentication = async () => {
-        await new Promise((resolve) => setTimeout(resolve, 50));
-        SetLoading(false);
-      };
-      checkAuthentication();
-    }, [user]);
-
-
-
+   
 
   return (
     <div className="flex border-2 w-[60%] m-auto border-red-700 items-center justify-center h-screen">
-      {loading ? null : !user ? (
+   
         <div className="bg-white p-8 rounded shadow-md">
           <h2 className="text-xl mb-4">Sign in with Google</h2>
           <button
@@ -47,15 +35,15 @@ const page = () => {
             Sign in with Google
           </button>
         </div>
-      ) : (
+     
         <div>
-          <h1>welcome page {user.displayName} </h1>
+          {/* <h1>welcome page {user.displayName} </h1> */}
           <h1 onClick={handleSignOut} className="border-2 border-green-500">
             {" "}
             SignOut{" "}
           </h1>
         </div>
-      )}
+     
     </div>
   );
 };

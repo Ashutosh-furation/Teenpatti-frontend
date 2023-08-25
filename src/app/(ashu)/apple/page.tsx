@@ -10,9 +10,8 @@ const page = () => {
    const handleAppleSignIn = async () => {
      try {
            await AppleSignin();
-      //  console.log("Successfully logged in")
+
      } catch (error) {
-      return "error"
        console.log("Apple Sign-In Error:", error);
      }
    };

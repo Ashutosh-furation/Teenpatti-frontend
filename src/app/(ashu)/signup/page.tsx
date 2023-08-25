@@ -26,8 +26,7 @@ const page: React.FC = () => {
     createUserWithEmailAndPassword(auth, formData.email, formData.password)
       .then((res) => {
         console.log("res", res);
-        // const user = res.user.accessToken
-        // console.log("user", user);
+        
         alert("Signup successful!");
       })
       .catch((err) => {

@@ -12,12 +12,12 @@ interface Auth {
 const page: React.FC = () => {
   const [email, setEmail] = useState<string>("");
   const [resetSent, setResetSent] = useState<boolean>(false);
-  //   const [user, loading, error] = useAuth(auth);
+ 
 
   const handleReset = async () => {
     if (email.trim() !== "") {
       try {
-        //  await auth.sendPasswordResetEmail(email)
+       
         await sendPasswordResetEmail(auth, email);
 
         setResetSent(true);
