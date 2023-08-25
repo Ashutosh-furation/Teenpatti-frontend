@@ -30,6 +30,11 @@ body {
 .main-nav-con{
    box-shadow: rgba(42, 40, 40, 0.3) 0px 10px 8px, rgba(14, 12, 12, 0.22) 0px 5px 2px;
    background-image: url('../../public/assets/Navboxshadow.svg'); 
+     /* filter: blur(-5px); */
+     /* background: #1F141F; */
+     /* backdrop-filter: blur(5px); */
+     /* filter: blur(1.5rem); */
+     /* backdrop-filter: drop-shadow(31, 20, 31, 1,#1F141F); */
    position: fixed;
    border-radius: 30px;
    margin-bottom: 30px;

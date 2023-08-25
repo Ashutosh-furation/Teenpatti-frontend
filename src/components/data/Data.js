@@ -133,9 +133,16 @@ export const Championsdata = [
       "I love playing at Sikka Play because of massive bonuses- theres always rewards waiting for us.",
   },
   {
-    id: 1,
+    id: 4,
     avatar: nathanimg,
     username: "Nathan Bishop",
+    userdes:
+      "I love playing at Sikka Play because of massive bonuses- theres always rewards waiting for us.",
+  },
+  {
+    id: 5,
+    avatar: nathansec,
+    username: "Maria Ray",
     userdes:
       "I love playing at Sikka Play because of massive bonuses- theres always rewards waiting for us.",
   },

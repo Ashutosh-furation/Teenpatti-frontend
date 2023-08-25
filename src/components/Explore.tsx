@@ -11,15 +11,15 @@ import { Exploredata } from "./data/Data.js";
 const Explore: React.FC = () => {
 
   return (
-    <div className="w-[100%]  h-[64vh] explore-container">
-      <div className="h-[50px] mt-8 text-center relative top-5  border-green-500">
+    <div className="w-[100%]  p-20 explore-container">
+      <div className=" text-center relative top-[-10px]  border-green-500">
         <h1 className="text-center expl-text font-marbley text-white text-4xl font-normal leading-3 tracking-[0em]">
           {" "}
           Explore Sikka Play{" "}
         </h1>
       </div>
 
-      <div className="w-[100%] h-[35vh]  m-auto relative top-10  border-yellow-600 flex justify-around">
+      <div className="w-[100%]  h-[35vh]  m-auto relative top-5  border-yellow-600 flex justify-around">
         <div className=" text-center h-[35vh] mt-5 border-white-500 p-5 flex justify-around explore-offer">
           {Exploredata.length > 0 &&
             Exploredata.map((data) => {
@@ -51,7 +51,7 @@ const Explore: React.FC = () => {
                     </div>
 
                     <div className="mt-5">
-                      <p className="text-white text-2xl font-normal leading-loose tracking-normal expl-text">
+                      <p className="text-white  md:text-2xl  sm:text-lg font-normal leading-loose tracking-normal expl-text">
                         {data.Title}{" "}
                       </p>
                     </div>
@@ -61,15 +61,15 @@ const Explore: React.FC = () => {
             })}
         </div>
 
-        <div className="text-center  w-[25vw] h-[20vh] border-white-500 mt-10 border-white-500">
+        <div className="text-center  w-[25vw]  border-white-500 mt-5 border-white-500">
           <div className=" border-yellow-500">
             <Image
               src={
                 "/assets/https___lottiefiles.com_animations_ace-of-spade-XlKBNiUy5Q.gif"
               }
               alt="explore"
-              width={600}
-              height={600}
+              width={500}
+              height={500}
             />
           </div>
         </div>

@@ -58,7 +58,8 @@ const ChampionCard: React.FC = () => {
                       style={{
                         width: activeIndex === index ? "250px" : "150px",
                         opacity: activeIndex === index ? "3" : ".5",
-                        border: activeIndex === index ? "5px solid red" : "",
+                        border:
+                          activeIndex === index ? "5px solid #B40E0D" : "",
                         // boxshadow : activeIndex === index ?
                       }}
                     >

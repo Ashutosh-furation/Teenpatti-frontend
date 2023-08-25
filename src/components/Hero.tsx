@@ -14,7 +14,8 @@ const Hero: React.FC = () => {
   return (
     <div className=" border-yellow-600">
       <div className="w-[100%] m-auto  h-[813px] border-black-900 object-fit bg-no-repeat bg-black bg-[url('/assets/Grouphero.svg')]">
-        <div className="h-[20%]  w-[100%] m-auto  relative top-0    border-green-600 bg-[#1F141F]      main-nav-con">
+          
+        <div className="h-[20%]  w-[100%] m-auto  relative top-0    border-green-600     main-nav-con">
           <div className=" w-[100%]  h-[5rem]  m-auto  text-center justify-center items-center  border-green-500  relative left-5 top-4">
             <Image
               src={navlogo}
