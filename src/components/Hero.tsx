@@ -12,54 +12,53 @@ import heroshadow from "../../public/assets/heroboxshadow.png";
 
 const Hero: React.FC = () => {
   return (
-    <div className=" border-yellow-600">
+    <section>
       <div className="w-[100%] m-auto  h-[813px] border-black-900 object-fit bg-no-repeat bg-black bg-[url('/assets/Grouphero.svg')]">
-          
-        <div className="h-[20%]  w-[100%] m-auto  relative top-0    border-green-600     main-nav-con">
-          <div className=" w-[100%]  h-[5rem]  m-auto  text-center justify-center items-center  border-green-500  relative left-5 top-4">
+        <div className=" w-[100%] m-auto     border-green-600     main-nav-con">
+          <div className="max-w-8xl  m-auto  text-center justify-center items-center  border-green-500  relative left-5 top-4">
             <Image
               src={navlogo}
               alt="navlogo"
-              className="m-auto  h-[6rem]  nav-background-img "
+              className="mx-auto   nav-background-img"
             />
           </div>
-          <div className="w-[85%]  m-auto relative top-[-38%] md:relative sm:top-[-36%]">
+          <div className="mx-auto">
             <Navbar />
           </div>
         </div>
         /**------------- herro part ------------ */
-        <div className=" w-[90%]  h-[75vh] m-auto mt-40 border-green-500 flex justify-between">
-          <div className="w-[70%]  h-[20rem] m-auto border-yellow-500">
-            <div className=" w-[100%]  h-[20vh] border-pink-500">
+        <div className=" w-[90%] py-3  m-auto mt-40 border-green-500 flex justify-between">
+          <div className="w-[70%]   py-[2rem] m-auto border-yellow-500">
+            <div className=" w-[100%]  px-1 py-2 border-pink-500">
               <Image src={sikka} alt="Sikkafont" />
             </div>
 
-            <div className="w-[80%]  h-[13vh] mt-5 border-pink-500">
+            <div className="w-[80%]  px-[1rem] py-[1rem]  border-pink-500">
               <p className="text-white  leading-[2rem] font-Lato text-[rgba(255, 255, 255, 0.8)] tracking-[0.1px] text-lg">
                 Experience boundless amusement on ultimate betting platform!
                 Unfold endless entertainment.
               </p>
             </div>
-            <div className=" w-[90%] mt-5 border-pink-500">
-              <button className="w-[22%] h-[48px] text-white rounded-[5px] join-button">
+            <div className=" w-[90%]  px-[1rem] border-pink-500">
+              <button className=" py-3 px-6  text-white rounded-[5px] join-button">
                 Join Now!
               </button>
             </div>
           </div>
 
-          <div className="w-[60%]  h-[28rem]  m-auto border-pink-500">
+          <div className="w-[60%]   m-auto border-pink-500">
             <div className="heroshadow  relative top-[-60px] h-[1px]">
               <Image src={heroshadow} alt="heroshadow" />
             </div>
-            <div className="flex  relative top-[-50px] justify-center items-center ">
-              <div className=" h-[30%] border-green-600  sm:w-[100%] md:w-[100%] lg:w-[100%] xl:w-[100%] m-auto rounded-t-lg  ">
-                <Image src={group} alt="Image" className="h-[30%] m-auto" />
+            <div className="flex  py-[2rem] px-[3rem] justify-center items-center ">
+              <div className=" py-2 px-5  border-green-600  m-auto rounded-t-lg  ">
+                <Image src={group} alt="Image" className=" m-auto" />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

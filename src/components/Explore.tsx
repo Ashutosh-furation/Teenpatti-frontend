@@ -5,33 +5,33 @@ import React from 'react'
 
 import suffleAnimation from "../../assets/https___lottiefiles.com_animations_ace-of-spade-XlKBNiUy5Q.gif";
 import { Exploredata } from "./data/Data.js";
-// console.log("Exploredata", Exploredata);
+
 
 
 const Explore: React.FC = () => {
 
   return (
-    <div className="w-[100%]  p-20 explore-container">
-      <div className=" text-center relative top-[-10px]  border-green-500">
+    <div className="w-[100%]  p-10 explore-container">
+      <div className=" text-center  py-[1rem] relative top-[-10px]  border-green-500">
         <h1 className="text-center expl-text font-marbley text-white text-4xl font-normal leading-3 tracking-[0em]">
           {" "}
           Explore Sikka Play{" "}
         </h1>
       </div>
 
-      <div className="w-[100%]  h-[35vh]  m-auto relative top-5  border-yellow-600 flex justify-around">
-        <div className=" text-center h-[35vh] mt-5 border-white-500 p-5 flex justify-around explore-offer">
+      <div className="max-w-8xl  mx-auto relative top-5  border-yellow-600 flex justify-around">
+        <div className=" text-center   border-white-500 p-5 flex justify-around explore-offer">
           {Exploredata.length > 0 &&
             Exploredata.map((data) => {
               return (
                 <div
-                  className="text-center w-[100%] h-[30vh] mt-5 border-white-500"
+                  className="text-center   mt-5 border-white-500"
                   key={data.id}
                 >
-                  <div className="  text-center  m-auto justify-center border-yellow-500">
-                    <div className="flex  justify-center items-center ">
-                      <div className="h-[15vh] m-auto justify-center items-center  border-green-600   ">
-                        <div className="h-[30%] object-fill">
+                  <div className=" text-center  m-auto justify-center border-yellow-500">
+                    <div className="flex  py-[.5rem] justify-center items-center ">
+                      <div className="h-[100px]  m-auto justify-center items-center  border-green-600   ">
+                        <div className="py-[1rem] object-fill">
                           <Image
                             src={data.img}
                             alt="Image"
@@ -61,15 +61,15 @@ const Explore: React.FC = () => {
             })}
         </div>
 
-        <div className="text-center  w-[25vw]  border-white-500 mt-5 border-white-500">
-          <div className=" border-yellow-500">
+        <div className="text-center   border-white-500 mt-5 border-white-500">
+          <div className="border-yellow-500">
             <Image
               src={
                 "/assets/https___lottiefiles.com_animations_ace-of-spade-XlKBNiUy5Q.gif"
               }
               alt="explore"
-              width={500}
-              height={500}
+              width={400}
+              height={400}
             />
           </div>
         </div>

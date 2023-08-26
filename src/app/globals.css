@@ -28,16 +28,10 @@ body {
 
 /* ----------------------------------------------------------------- */
 .main-nav-con{
-   box-shadow: rgba(42, 40, 40, 0.3) 0px 10px 8px, rgba(14, 12, 12, 0.22) 0px 5px 2px;
+   /* box-shadow: rgba(42, 40, 40, 0.3) 0px 10px 8px, rgba(14, 12, 12, 0.22) 0px 5px 2px; */
    background-image: url('../../public/assets/Navboxshadow.svg'); 
-     /* filter: blur(-5px); */
-     /* background: #1F141F; */
-     /* backdrop-filter: blur(5px); */
-     /* filter: blur(1.5rem); */
-     /* backdrop-filter: drop-shadow(31, 20, 31, 1,#1F141F); */
    position: fixed;
    border-radius: 30px;
-   margin-bottom: 30px;
    z-index: 3; 
 }
 
@@ -54,7 +48,7 @@ body {
 /**------------- hero section----------------------*/
 
 .game-box-con {
-  border: .1px solid #ad0b40;
+  /* border: .1px solid #ad0b40; */
   background: linear-gradient(
     180deg,
     rgba(75, 73, 74, 0.7) 57.81%,
@@ -67,25 +61,17 @@ body {
     ),
     linear-gradient(0deg, #b40e0d, #b40e0d);
   box-shadow: 0px 0px 10px 0px #f442b799;
-   border-radius: 30px;
+   border-radius: 20px;
    /* border-[0.1px] border-[#ad0b40] bg-gradient-to-t from-[rgba(75, 73, 74, 0.7)] via-[rgba(0, 0, 0, 0.7)] border-[linear-gradient(111.16deg, rgba(173, 11, 64, 0.878431) 9.86%, #ff1917 63.95%), linear-gradient(0deg, #b40e0d, #b40e0d)] shadow-md rounded-[20px] */
 }
 
 .avatar-box {
-   /* border: 10px solid transparent;
-  border-image: linear-gradient(to right, #AD0B40, #FF1917); 
-  border-image-slice: 2;  */
     border: 10px solid #FF1917;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
 .image-color{
-   /* background: linear-gradient(
-    111.16deg,
-     #AD0B40 9.86%,
-    #ff1917 63.95%
-  ); */
    background: linear-gradient(
     111.16deg,
      #ff1917 9.86%,
@@ -110,8 +96,7 @@ body {
     rgba(173, 11, 64, 0.878431) 9.86%,
     #ff1917 63.95%
   );
-  /* rounded-[8px] flex items-center bg-[linear-gradient(111.16deg, rgba(173, 11, 64, 0.878431) 9.86%, #ff1917 63.95%)] */
-}
+ }
 
 /*  Explore sikka play */
 .explore-container {
@@ -131,14 +116,7 @@ body {
   font-family: 'marbley';
 }
 
-/* .offer-title {
-  font-family: "Bricolage Grotesque";
-  color: #ffffff;
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 1.5rem;
-  letter-spacing: 0em;
-} */
+
 
 .exclusive-text{
    font-family: "marbley";
@@ -207,14 +185,6 @@ background: linear-gradient(0deg, rgba(7,7,7,1) 66%, rgba(19,9,28,1) 100%);
   letter-spacing: 0em;
 }
 
-/* .user-name{
- font-family: "Bricolage Grotesque";
-font-size: 1.6rem;
-font-weight: 400;
-line-height: 34px;
-letter-spacing: 0em;
-color: #6E6E6E;
-} */
 
 
 .user-descrip{

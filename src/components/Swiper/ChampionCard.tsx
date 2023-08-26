@@ -13,7 +13,7 @@ import Image from "next/image";
 import { Championsdata } from "../data/Data.js";
 
 const ChampionCard: React.FC = () => {
-  const [activeIndex, setActiveIndex] = useState<number>(1);
+  const [activeIndex, setActiveIndex] = useState<number>(0);
 
   const handleSlideChange = (swiper: any) => {
     setActiveIndex(swiper.activeIndex);
@@ -23,8 +23,8 @@ const ChampionCard: React.FC = () => {
 
   return (
     <div
-      className="h-[90%]
-     relative top-[-20px] border-green-500"
+      className=" py-[1rem] px-[2rem]
+     relative top-[-20px] "
     >
       <Swiper
         slidesPerView={3}
@@ -36,31 +36,28 @@ const ChampionCard: React.FC = () => {
           clickable: true,
         }}
         modules={[Pagination, Navigation]}
-        className="mySwiper  border-yellow-600 "
+        className="mySwiper "
       >
         {Championsdata.length > 0 &&
           Championsdata.map((data, index) => {
             return (
               <SwiperSlide
-                // key={data.id}
                 key={index}
                 className={`swiper-dot congrs user-descrip userimage user-name Image ${
                   activeIndex === index ? "selected" : ""
                 }`}
-                // onClick={() => setActiveIndex(index)}
               >
-                <div className="w-[20vw] ">
-                  <div className="w-[50%] relative m-auto h-[100px] border-green-500  congrs"></div>
-                  <div className="flex justify-center items-center ">
-                    {/*  className="w-20 h-20 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full overflow-hidden User-Avatar" */}
+                <div className="py-[1rem] px-[1rem]">
+                  <div className="m-auto  congrs"></div>
+                  <div className="flex py-[.1rem] px-[.3rem]  justify-center items-center ">
                     <div
                       className={`Image rounded-full userimage  `}
                       style={{
-                        width: activeIndex === index ? "250px" : "150px",
+                        width: activeIndex === index ? "280px" : "150px",
                         opacity: activeIndex === index ? "3" : ".5",
                         border:
                           activeIndex === index ? "5px solid #B40E0D" : "",
-                        // boxshadow : activeIndex === index ?
+                        marginTop: activeIndex === index ? "-10px" : "30px",
                       }}
                     >
                       <Image
@@ -70,7 +67,7 @@ const ChampionCard: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className=" border-green-600 mt-5">
+                  <div className=" py-[.5rem] px-[1rem] border-green-600 mt-5">
                     <p
                       className="text-center  expl-text font-normal text-2xl leading-8 tracking-normal text-gray-600"
                       style={{
@@ -81,7 +78,7 @@ const ChampionCard: React.FC = () => {
                       {data.username}
                     </p>
                   </div>
-                  <div className="border-green-600 mt-4 ">
+                  <div className=" py-[1rem] px-[2rem] border-green-600 mt-4 ">
                     <p
                       className={`${
                         index + 1

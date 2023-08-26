@@ -8,24 +8,22 @@ import gamelogo from "../../public/assets/Gamelogo.svg"
 const ExlcusiveOffer: React.FC = () => {
 
   return (
-    <div className="h-[120vh] b w-[100%]  text-center  border-green-500 bg-[black]">
+    <div className="py-[.2rem]  w-[100%]  text-center  border-green-500 bg-[black]">
       <div className="w-[95%]  m-auto  text-center  border-yellow-500 flex justify-between  ">
-        <div className="h-[110px] w-[10%]  relative top-5  border-pink-500">
+        <div className="  border-pink-500">
           <Image
             src={suffleCoin}
             alt="card"
-            className="m-auto w-[200px] h-[150px]"
+            className="m-auto "
           />
         </div>
 
-        <div className="h-[110px] w-[15%] relative top-5  border-pink-500 ">
+        <div className="w-[15%] relative top-2  border-pink-500 ">
           <Image src={sufflecard} alt="Coin" className="w-[100%]  m-auto" />
         </div>
       </div>
 
-     
-      <div className="w-[100%]  border-green-700 m-auto">
-    
+      <div className="py-[.3rem] px-[.4rem] relative top-[-20px] border-green-700 m-auto">
         <div className="flex justify-center">
           <Image src={gamelogo} alt="gamelogo" />
         </div>
@@ -35,7 +33,7 @@ const ExlcusiveOffer: React.FC = () => {
         </p>
       </div>
 
-      <div className="h-[60vh]  mt-5  border-yellow-500">
+      <div className="py-[.2rem] pb-[.2rem] relative top-[-50px]  border-yellow-500">
         <ExlcusiveofferCard />
       </div>
     </div>
