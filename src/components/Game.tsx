@@ -2,7 +2,6 @@ import Image from 'next/image';
 import React from 'react'
 import card from "../../public/assets/Card.svg"
 import coin from "../../public/assets/cardcoin.svg"
-import game from "../../public/assets/Games.svg"
 import GamedetailSwiper from './Swiper/GamedetailSwiper';
 import gamelogo from "../../public/assets/Gamelogo.svg"
 

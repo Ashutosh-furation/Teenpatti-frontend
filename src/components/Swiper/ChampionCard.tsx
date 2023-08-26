@@ -13,7 +13,7 @@ import Image from "next/image";
 import { Championsdata } from "../data/Data.js";
 
 const ChampionCard: React.FC = () => {
-  const [activeIndex, setActiveIndex] = useState<number>(0);
+  const [activeIndex, setActiveIndex] = useState<number>(1);
 
   const handleSlideChange = (swiper: any) => {
     setActiveIndex(swiper.activeIndex);
