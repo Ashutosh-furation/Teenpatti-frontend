@@ -7,8 +7,6 @@ import Footer from "@/components/Footer";
 import Game from "@/components/Game";
 import GameFeatures from "@/components/GameFeature";
 import Hero from "@/components/Hero";
-// import { GameFeature } from "@/components/data/Data";
-
 
 const page = () => {
   return (
